@@ -1,0 +1,2035 @@
+{
+  "version": 1,
+  "modules": [
+    {
+      "id": "general_history",
+      "title": {
+        "en": "My story",
+        "fr": "Mon histoire"
+      },
+      "description": {
+        "en": "Understand your journey with addiction",
+        "fr": "Comprendre ton parcours avec l'addiction"
+      },
+      "icon": "🪞",
+      "type": "general",
+      "exercises": [
+        {
+          "id": "history_ex1",
+          "title": {
+            "en": "The beginning",
+            "fr": "Les débuts"
+          },
+          "questions": [
+            {
+              "id": "history_q1",
+              "text": {
+                "en": "How old were you when you first tried? What were the circumstances?",
+                "fr": "Quel âge avais-tu lors de ta première consommation ? Quelles étaient les circonstances ?"
+              },
+              "type": "freeText",
+              "isRequired": true,
+              "hint": {
+                "en": "Take your time to remember...",
+                "fr": "Prends le temps de te souvenir..."
+              }
+            },
+            {
+              "id": "history_q2",
+              "text": {
+                "en": "What did you feel at the time?",
+                "fr": "Qu'as-tu ressenti à ce moment-là ?"
+              },
+              "type": "freeText",
+              "isRequired": true,
+              "hint": {
+                "en": "Curiosity, peer pressure, escape...",
+                "fr": "Curiosité, pression sociale, fuite..."
+              }
+            },
+            {
+              "id": "history_q3",
+              "text": {
+                "en": "Looking back, what do you think pushed you to try?",
+                "fr": "Avec le recul, qu'est-ce qui t'a poussé à essayer selon toi ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Go back to the origins of your consumption",
+            "fr": "Reviens aux origines de ta consommation"
+          }
+        },
+        {
+          "id": "history_ex2",
+          "title": {
+            "en": "The escalation",
+            "fr": "L'escalade"
+          },
+          "questions": [
+            {
+              "id": "history_ex2_q1",
+              "text": {
+                "en": "How did your consumption change over time?",
+                "fr": "Comment ta consommation a-t-elle évolué au fil du temps ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "history_ex2_q2",
+              "text": {
+                "en": "On a scale of 1 to 10, how much control do you feel you had?",
+                "fr": "Sur une échelle de 1 à 10, quel contrôle avais-tu ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            },
+            {
+              "id": "history_ex2_q3",
+              "text": {
+                "en": "What moment marked the shift from occasional to regular?",
+                "fr": "Quel moment a marqué le passage d'occasionnel à régulier ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Understand how the consumption evolved",
+            "fr": "Comprendre comment ta consommation a évolué"
+          }
+        },
+        {
+          "id": "history_ex3",
+          "title": {
+            "en": "The impact on my life",
+            "fr": "L'impact sur ma vie"
+          },
+          "questions": [
+            {
+              "id": "history_ex3_q1",
+              "text": {
+                "en": "What has addiction taken from you?",
+                "fr": "Qu'est-ce que l'addiction t'a pris ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "history_ex3_q2",
+              "text": {
+                "en": "What would your life be like without this addiction?",
+                "fr": "À quoi ressemblerait ta vie sans cette addiction ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "history_ex3_q3",
+              "text": {
+                "en": "Which areas of your life have been impacted?",
+                "fr": "Quels domaines de ta vie ont été impactés ?"
+              },
+              "type": "multipleChoice",
+              "isRequired": true,
+              "choices": [
+                {
+                  "id": "wbChoiceFamilyImpact",
+                  "label": {
+                    "en": "Family",
+                    "fr": "Famille"
+                  }
+                },
+                {
+                  "id": "wbChoiceWorkImpact",
+                  "label": {
+                    "en": "Work",
+                    "fr": "Travail"
+                  }
+                },
+                {
+                  "id": "wbChoiceHealthImpact",
+                  "label": {
+                    "en": "Health",
+                    "fr": "Santé"
+                  }
+                },
+                {
+                  "id": "wbChoiceSocialImpact",
+                  "label": {
+                    "en": "Social life",
+                    "fr": "Vie sociale"
+                  }
+                },
+                {
+                  "id": "wbChoiceFinancialImpact",
+                  "label": {
+                    "en": "Finances",
+                    "fr": "Finances"
+                  }
+                },
+                {
+                  "id": "wbChoiceSelfEsteemImpact",
+                  "label": {
+                    "en": "Self-esteem",
+                    "fr": "Estime de soi"
+                  }
+                }
+              ]
+            }
+          ],
+          "description": {
+            "en": "Identify the consequences of addiction on your life",
+            "fr": "Identifier les conséquences de l'addiction sur ta vie"
+          }
+        },
+        {
+          "id": "history_ex4",
+          "title": {
+            "en": "My awareness",
+            "fr": "Ma prise de conscience"
+          },
+          "questions": [
+            {
+              "id": "history_ex4_q1",
+              "text": {
+                "en": "What was the moment you realized things needed to change?",
+                "fr": "Quel a été le déclic, le moment où tu as compris qu'il fallait changer ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "history_ex4_q2",
+              "text": {
+                "en": "What gives you strength to keep going today?",
+                "fr": "Qu'est-ce qui te donne la force de continuer aujourd'hui ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "When did you realize you needed to change?",
+            "fr": "Quand as-tu réalisé que tu devais changer ?"
+          }
+        }
+      ]
+    },
+    {
+      "id": "general_triggers",
+      "title": {
+        "en": "My triggers",
+        "fr": "Mes déclencheurs"
+      },
+      "description": {
+        "en": "Identify what pushes you to consume",
+        "fr": "Identifier ce qui te pousse à consommer"
+      },
+      "icon": "🎯",
+      "type": "general",
+      "exercises": [
+        {
+          "id": "triggers_ex1",
+          "title": {
+            "en": "My risky situations",
+            "fr": "Mes situations à risque"
+          },
+          "questions": [
+            {
+              "id": "triggers_q1",
+              "text": {
+                "en": "What situations give you the strongest urge to consume?",
+                "fr": "Quelles situations te donnent le plus envie de consommer ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "triggers_q2",
+              "text": {
+                "en": "How frequent are these situations (1=rare, 10=daily)?",
+                "fr": "À quelle fréquence ces situations arrivent-elles (1=rare, 10=quotidien) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            },
+            {
+              "id": "triggers_q3",
+              "text": {
+                "en": "Which places are associated with your consumption?",
+                "fr": "Quels lieux sont associés à ta consommation ?"
+              },
+              "type": "multipleChoice",
+              "isRequired": true,
+              "choices": [
+                {
+                  "id": "wbChoiceHome",
+                  "label": {
+                    "en": "Home",
+                    "fr": "Maison"
+                  }
+                },
+                {
+                  "id": "wbChoiceWork",
+                  "label": {
+                    "en": "Work",
+                    "fr": "Travail"
+                  }
+                },
+                {
+                  "id": "wbChoiceBar",
+                  "label": {
+                    "en": "Bar / pub",
+                    "fr": "Bar / pub"
+                  }
+                },
+                {
+                  "id": "wbChoiceFriends",
+                  "label": {
+                    "en": "Friends' place",
+                    "fr": "Chez des amis"
+                  }
+                },
+                {
+                  "id": "wbChoiceCar",
+                  "label": {
+                    "en": "Car",
+                    "fr": "Voiture"
+                  }
+                },
+                {
+                  "id": "wbChoiceOutdoors",
+                  "label": {
+                    "en": "Outdoors",
+                    "fr": "Extérieur"
+                  }
+                }
+              ]
+            }
+          ],
+          "description": {
+            "en": "Identify situations that trigger cravings",
+            "fr": "Identifier les situations qui déclenchent l'envie"
+          }
+        },
+        {
+          "id": "triggers_ex2",
+          "title": {
+            "en": "My triggering emotions",
+            "fr": "Mes émotions déclencheuses"
+          },
+          "questions": [
+            {
+              "id": "triggers_ex2_q1",
+              "text": {
+                "en": "Which emotions trigger your urge to consume?",
+                "fr": "Quelles émotions déclenchent ton envie de consommer ?"
+              },
+              "type": "multipleChoice",
+              "isRequired": true,
+              "choices": [
+                {
+                  "id": "wbChoiceStress",
+                  "label": {
+                    "en": "Stress",
+                    "fr": "Stress"
+                  }
+                },
+                {
+                  "id": "wbChoiceSadness",
+                  "label": {
+                    "en": "Sadness",
+                    "fr": "Tristesse"
+                  }
+                },
+                {
+                  "id": "wbChoiceBoredom",
+                  "label": {
+                    "en": "Boredom",
+                    "fr": "Ennui"
+                  }
+                },
+                {
+                  "id": "wbChoiceAnger",
+                  "label": {
+                    "en": "Anger",
+                    "fr": "Colère"
+                  }
+                },
+                {
+                  "id": "wbChoiceLoneliness",
+                  "label": {
+                    "en": "Loneliness",
+                    "fr": "Solitude"
+                  }
+                },
+                {
+                  "id": "wbChoiceAnxiety",
+                  "label": {
+                    "en": "Anxiety",
+                    "fr": "Anxiété"
+                  }
+                },
+                {
+                  "id": "wbChoiceJoy",
+                  "label": {
+                    "en": "Joy / celebration",
+                    "fr": "Joie / fête"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "triggers_ex2_q2",
+              "text": {
+                "en": "What do you feel just before giving in?",
+                "fr": "Que ressens-tu juste avant de céder ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "triggers_ex2_q3",
+              "text": {
+                "en": "How could you manage this emotion differently?",
+                "fr": "Comment pourrais-tu gérer cette émotion autrement ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Understand the emotional link with consumption",
+            "fr": "Comprendre le lien émotionnel avec ta consommation"
+          }
+        },
+        {
+          "id": "triggers_ex3",
+          "title": {
+            "en": "My social environment",
+            "fr": "Mon entourage et moi"
+          },
+          "questions": [
+            {
+              "id": "triggers_ex3_q1",
+              "text": {
+                "en": "Which people or groups make you want to consume?",
+                "fr": "Quelles personnes ou groupes te donnent envie de consommer ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "triggers_ex3_q2",
+              "text": {
+                "en": "Who supports you in your recovery?",
+                "fr": "Qui te soutient dans ta démarche de rétablissement ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Identify the people who influence your consumption",
+            "fr": "Identifier les personnes qui influencent ta consommation"
+          }
+        },
+        {
+          "id": "triggers_ex4",
+          "title": {
+            "en": "My thought patterns before craving",
+            "fr": "Mes pensées avant l'envie"
+          },
+          "questions": [
+            {
+              "id": "triggers_ex4_q1",
+              "text": {
+                "en": "What do you tell yourself right before giving in?",
+                "fr": "Que te dis-tu juste avant de céder ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "triggers_ex4_q2",
+              "text": {
+                "en": "What would you tell a friend in the same situation?",
+                "fr": "Que dirais-tu à un ami dans la même situation ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "triggers_ex4_q3",
+              "text": {
+                "en": "How strong is your ability to resist (1=low, 10=strong)?",
+                "fr": "Quelle est ta capacité de résistance (1=faible, 10=forte) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ],
+          "description": {
+            "en": "Recognize the internal dialogue before a craving",
+            "fr": "Reconnaître le dialogue intérieur avant une envie"
+          }
+        }
+      ]
+    },
+    {
+      "id": "general_motivations",
+      "title": {
+        "en": "My motivations",
+        "fr": "Mes motivations"
+      },
+      "description": {
+        "en": "Clarify why you want to change",
+        "fr": "Clarifier pourquoi tu veux changer"
+      },
+      "icon": "💪",
+      "type": "general",
+      "exercises": [
+        {
+          "id": "motivations_ex1",
+          "title": {
+            "en": "Why I want to stop",
+            "fr": "Pourquoi je veux arrêter"
+          },
+          "questions": [
+            {
+              "id": "motivations_q1",
+              "text": {
+                "en": "List 5 reasons why you want to quit.",
+                "fr": "Liste 5 raisons pour lesquelles tu veux arrêter."
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "motivations_q2",
+              "text": {
+                "en": "Which reason matters the most to you? Why?",
+                "fr": "Quelle raison compte le plus pour toi ? Pourquoi ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "motivations_q3",
+              "text": {
+                "en": "How motivated do you feel right now (1-10)?",
+                "fr": "À quel point te sens-tu motivé(e) en ce moment (1-10) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ],
+          "description": {
+            "en": "Explore your deep motivations for change",
+            "fr": "Explorer tes motivations profondes"
+          }
+        },
+        {
+          "id": "motivations_ex2",
+          "title": {
+            "en": "My life without addiction",
+            "fr": "Ma vie sans addiction"
+          },
+          "questions": [
+            {
+              "id": "motivations_ex2_q1",
+              "text": {
+                "en": "Describe a typical day in your life without addiction.",
+                "fr": "Décris une journée type dans ta vie sans addiction."
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "motivations_ex2_q2",
+              "text": {
+                "en": "What would you like to achieve once free?",
+                "fr": "Que voudrais-tu accomplir une fois libre ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Imagine the future you're building",
+            "fr": "Imagine l'avenir que tu construis"
+          }
+        },
+        {
+          "id": "motivations_ex3",
+          "title": {
+            "en": "My letter to myself",
+            "fr": "Ma lettre à moi-même"
+          },
+          "questions": [
+            {
+              "id": "motivations_ex3_q1",
+              "text": {
+                "en": "Write a letter to the person you will be in 1 year.",
+                "fr": "Écris une lettre à la personne que tu seras dans 1 an."
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "motivations_ex3_q2",
+              "text": {
+                "en": "What would you like to say to the person who's struggling today?",
+                "fr": "Que voudrais-tu dire à celui/celle qui galère aujourd'hui ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "motivations_ex3_q3",
+              "text": {
+                "en": "What promise do you make to yourself?",
+                "fr": "Quelle promesse te fais-tu ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Write a letter to your future self",
+            "fr": "Écris une lettre à ton futur toi"
+          }
+        }
+      ]
+    },
+    {
+      "id": "general_thoughts",
+      "title": {
+        "en": "My automatic thoughts",
+        "fr": "Mes pensées automatiques"
+      },
+      "description": {
+        "en": "Recognize cognitive distortions related to addiction",
+        "fr": "Reconnaître les distorsions cognitives liées à l'addiction"
+      },
+      "icon": "🧠",
+      "type": "general",
+      "exercises": [
+        {
+          "id": "thoughts_ex1",
+          "title": {
+            "en": "My inner lies",
+            "fr": "Mes mensonges intérieurs"
+          },
+          "questions": [
+            {
+              "id": "thoughts_q1",
+              "text": {
+                "en": "What does your addiction tell you when you want to give in?",
+                "fr": "Que te dit ton addiction quand tu veux céder ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "thoughts_q2",
+              "text": {
+                "en": "Write the truth behind each lie.",
+                "fr": "Écris la vérité derrière chaque mensonge."
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "thoughts_q3",
+              "text": {
+                "en": "Which thinking patterns do you recognize?",
+                "fr": "Quels schémas de pensée reconnais-tu ?"
+              },
+              "type": "multipleChoice",
+              "isRequired": true,
+              "choices": [
+                {
+                  "id": "wbChoiceMinimization",
+                  "label": {
+                    "en": "Minimization (\"it's not that bad\")",
+                    "fr": "Minimisation (\"c'est pas si grave\")"
+                  }
+                },
+                {
+                  "id": "wbChoiceRationalization",
+                  "label": {
+                    "en": "Rationalization (\"I have a good reason\")",
+                    "fr": "Rationalisation (\"j'ai une bonne raison\")"
+                  }
+                },
+                {
+                  "id": "wbChoiceDenial",
+                  "label": {
+                    "en": "Denial (\"I can stop whenever\")",
+                    "fr": "Déni (\"je peux arrêter quand je veux\")"
+                  }
+                },
+                {
+                  "id": "wbChoiceJustOnce",
+                  "label": {
+                    "en": "\"Just once won't hurt\"",
+                    "fr": "\"Juste une fois, c'est pas grave\""
+                  }
+                },
+                {
+                  "id": "wbChoiceIDeserveIt",
+                  "label": {
+                    "en": "\"I deserve it\"",
+                    "fr": "\"Je le mérite\""
+                  }
+                },
+                {
+                  "id": "wbChoiceICantWithout",
+                  "label": {
+                    "en": "\"I can't cope without it\"",
+                    "fr": "\"Je ne peux pas vivre sans\""
+                  }
+                }
+              ]
+            }
+          ],
+          "description": {
+            "en": "Identify the lies your addiction tells you",
+            "fr": "Identifier les mensonges que ton addiction te raconte"
+          }
+        },
+        {
+          "id": "thoughts_ex2",
+          "title": {
+            "en": "Deconstructing my thoughts",
+            "fr": "Déconstruire mes pensées"
+          },
+          "questions": [
+            {
+              "id": "thoughts_ex2_q1",
+              "text": {
+                "en": "Think of a recent craving. What thought came first?",
+                "fr": "Pense à une envie récente. Quelle pensée est venue en premier ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "thoughts_ex2_q2",
+              "text": {
+                "en": "What evidence exists against that thought?",
+                "fr": "Quelles preuves existent contre cette pensée ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "thoughts_ex2_q3",
+              "text": {
+                "en": "Write a more balanced, realistic thought.",
+                "fr": "Écris une pensée plus équilibrée et réaliste."
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Challenge your distorted thoughts",
+            "fr": "Remettre en question tes pensées déformées"
+          }
+        },
+        {
+          "id": "thoughts_ex3",
+          "title": {
+            "en": "My response toolkit",
+            "fr": "Ma boîte à réponses"
+          },
+          "questions": [
+            {
+              "id": "thoughts_ex3_q1",
+              "text": {
+                "en": "For each lie, write a counter-phrase you can tell yourself.",
+                "fr": "Pour chaque mensonge, écris une contre-phrase que tu peux te dire."
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "thoughts_ex3_q2",
+              "text": {
+                "en": "What mantra or phrase helps you resist?",
+                "fr": "Quel mantra ou phrase t'aide à résister ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Prepare responses to your automatic thoughts",
+            "fr": "Préparer des réponses à tes pensées automatiques"
+          }
+        },
+        {
+          "id": "thoughts_ex4",
+          "title": {
+            "en": "My progress with my thoughts",
+            "fr": "Mon évolution avec mes pensées"
+          },
+          "questions": [
+            {
+              "id": "thoughts_ex4_q1",
+              "text": {
+                "en": "Have you noticed changes in how you think when craving?",
+                "fr": "As-tu remarqué des changements dans ta façon de penser quand l'envie vient ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "thoughts_ex4_q2",
+              "text": {
+                "en": "How well can you catch a distorted thought now (1-10)?",
+                "fr": "À quel point arrives-tu à repérer une pensée déformée maintenant (1-10) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ],
+          "description": {
+            "en": "Assess your evolution",
+            "fr": "Évaluer ton évolution"
+          }
+        }
+      ]
+    },
+    {
+      "id": "general_strategies",
+      "title": {
+        "en": "My strategies",
+        "fr": "Mes stratégies"
+      },
+      "description": {
+        "en": "Build your anti-craving toolkit",
+        "fr": "Construire ta boîte à outils anti-craving"
+      },
+      "icon": "🛡️",
+      "type": "general",
+      "exercises": [
+        {
+          "id": "strategies_ex1",
+          "title": {
+            "en": "What already works for me",
+            "fr": "Ce qui marche déjà pour moi"
+          },
+          "questions": [
+            {
+              "id": "strategies_q1",
+              "text": {
+                "en": "What have you already tried that worked?",
+                "fr": "Qu'as-tu déjà essayé qui a fonctionné ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "strategies_q2",
+              "text": {
+                "en": "What didn't work? Why?",
+                "fr": "Qu'est-ce qui n'a pas marché ? Pourquoi ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "strategies_q3",
+              "text": {
+                "en": "How confident are you in your strategies (1-10)?",
+                "fr": "Quel est ton niveau de confiance dans tes stratégies (1-10) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ],
+          "description": {
+            "en": "Identify the strategies that have already helped you",
+            "fr": "Identifier les stratégies qui t'ont déjà aidé"
+          }
+        },
+        {
+          "id": "strategies_ex2",
+          "title": {
+            "en": "My emergency plan",
+            "fr": "Mon plan d'urgence"
+          },
+          "questions": [
+            {
+              "id": "strategies_ex2_q1",
+              "text": {
+                "en": "Write your step-by-step plan for when craving hits.",
+                "fr": "Écris ton plan étape par étape quand l'envie arrive."
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "strategies_ex2_q2",
+              "text": {
+                "en": "Who can you call when you're struggling?",
+                "fr": "Qui peux-tu appeler quand ça ne va pas ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Create a concrete plan for when craving strikes",
+            "fr": "Créer un plan concret pour quand l'envie arrive"
+          }
+        },
+        {
+          "id": "strategies_ex3",
+          "title": {
+            "en": "My healthy activities",
+            "fr": "Mes activités saines"
+          },
+          "questions": [
+            {
+              "id": "strategies_ex3_q1",
+              "text": {
+                "en": "Which activities help you feel better?",
+                "fr": "Quelles activités te font du bien ?"
+              },
+              "type": "multipleChoice",
+              "isRequired": true,
+              "choices": [
+                {
+                  "id": "wbChoiceWalk",
+                  "label": {
+                    "en": "Go for a walk",
+                    "fr": "Marcher"
+                  }
+                },
+                {
+                  "id": "wbChoiceSport",
+                  "label": {
+                    "en": "Exercise",
+                    "fr": "Faire du sport"
+                  }
+                },
+                {
+                  "id": "wbChoiceCallFriend",
+                  "label": {
+                    "en": "Call a friend",
+                    "fr": "Appeler un ami"
+                  }
+                },
+                {
+                  "id": "wbChoiceBreathing",
+                  "label": {
+                    "en": "Breathing exercises",
+                    "fr": "Exercices de respiration"
+                  }
+                },
+                {
+                  "id": "wbChoiceWrite",
+                  "label": {
+                    "en": "Write / journal",
+                    "fr": "Écrire / journal"
+                  }
+                },
+                {
+                  "id": "wbChoiceMeditate",
+                  "label": {
+                    "en": "Meditate",
+                    "fr": "Méditer"
+                  }
+                },
+                {
+                  "id": "wbChoiceMusic",
+                  "label": {
+                    "en": "Listen to music",
+                    "fr": "Écouter de la musique"
+                  }
+                },
+                {
+                  "id": "wbChoiceColdShower",
+                  "label": {
+                    "en": "Cold shower",
+                    "fr": "Douche froide"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "strategies_ex3_q2",
+              "text": {
+                "en": "What new activity would you like to try?",
+                "fr": "Quelle nouvelle activité aimerais-tu essayer ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "strategies_ex3_q3",
+              "text": {
+                "en": "How can you integrate these activities into your daily routine?",
+                "fr": "Comment peux-tu intégrer ces activités dans ta routine quotidienne ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Find healthy alternatives to replace old habits",
+            "fr": "Trouver des alternatives saines pour remplacer les anciennes habitudes"
+          }
+        }
+      ]
+    },
+    {
+      "id": "general_goals",
+      "title": {
+        "en": "My goals",
+        "fr": "Mon bilan & mes objectifs"
+      },
+      "description": {
+        "en": "Take stock and look ahead",
+        "fr": "Faire le point et se projeter"
+      },
+      "icon": "🌱",
+      "type": "general",
+      "exercises": [
+        {
+          "id": "goals_ex1",
+          "title": {
+            "en": "Where I stand",
+            "fr": "Où j'en suis"
+          },
+          "questions": [
+            {
+              "id": "goals_q1",
+              "text": {
+                "en": "What are you most proud of in your recovery?",
+                "fr": "De quoi es-tu le plus fier/fière dans ton rétablissement ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "goals_q2",
+              "text": {
+                "en": "What remains the hardest?",
+                "fr": "Qu'est-ce qui reste le plus difficile ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "goals_q3",
+              "text": {
+                "en": "How do you rate your overall progress (1-10)?",
+                "fr": "Comment notes-tu ta progression globale (1-10) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ],
+          "description": {
+            "en": "Assess your current situation honestly",
+            "fr": "Évaluer honnêtement ta situation actuelle"
+          }
+        },
+        {
+          "id": "goals_ex2",
+          "title": {
+            "en": "My short-term goals",
+            "fr": "Mes objectifs à court terme"
+          },
+          "questions": [
+            {
+              "id": "goals_ex2_q1",
+              "text": {
+                "en": "What 3 things do you want to accomplish this month?",
+                "fr": "Quelles 3 choses veux-tu accomplir ce mois-ci ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "goals_ex2_q2",
+              "text": {
+                "en": "What concrete steps will you take?",
+                "fr": "Quels pas concrets vas-tu faire ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "goals_ex2_q3",
+              "text": {
+                "en": "How will you know you've succeeded?",
+                "fr": "Comment sauras-tu que tu as réussi ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Define what you want to achieve in the coming weeks",
+            "fr": "Définir ce que tu veux accomplir dans les prochaines semaines"
+          }
+        },
+        {
+          "id": "goals_ex3",
+          "title": {
+            "en": "My support network",
+            "fr": "Mon réseau de soutien"
+          },
+          "questions": [
+            {
+              "id": "goals_ex3_q1",
+              "text": {
+                "en": "Who are the 3 people you trust most?",
+                "fr": "Quelles sont les 3 personnes en qui tu as le plus confiance ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "goals_ex3_q2",
+              "text": {
+                "en": "How can they help you concretely?",
+                "fr": "Comment peuvent-elles t'aider concrètement ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ],
+          "description": {
+            "en": "Identify the people who can help you",
+            "fr": "Identifier les personnes qui peuvent t'aider"
+          }
+        },
+        {
+          "id": "goals_ex4",
+          "title": {
+            "en": "My commitment",
+            "fr": "Mon engagement"
+          },
+          "questions": [
+            {
+              "id": "goals_ex4_q1",
+              "text": {
+                "en": "Write your commitment declaration: I commit to...",
+                "fr": "Écris ta déclaration d'engagement : Je m'engage à..."
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "goals_ex4_q2",
+              "text": {
+                "en": "How confident are you in keeping this commitment (1-10)?",
+                "fr": "Quel est ton niveau de confiance pour tenir cet engagement (1-10) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ],
+          "description": {
+            "en": "Formalize your commitment to yourself",
+            "fr": "Formaliser ton engagement envers toi-même"
+          }
+        }
+      ]
+    },
+    {
+      "id": "specific_alcohol",
+      "title": {
+        "en": "Alcohol and social life",
+        "fr": "Alcool et vie sociale"
+      },
+      "description": {
+        "en": "Understand the role of alcohol in your social life",
+        "fr": "Comprendre le rôle de l'alcool dans ta vie sociale"
+      },
+      "icon": "🍷",
+      "type": "specific",
+      "exercises": [
+        {
+          "id": "alcohol_ex1",
+          "title": {
+            "en": "My drinking situations",
+            "fr": "Mes situations de consommation"
+          },
+          "questions": [
+            {
+              "id": "alcohol_q1",
+              "text": {
+                "en": "In what social situations do you drink the most?",
+                "fr": "Dans quelles situations sociales bois-tu le plus ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "alcohol_q2",
+              "text": {
+                "en": "When do you drink?",
+                "fr": "Quand bois-tu ?"
+              },
+              "type": "multipleChoice",
+              "isRequired": true,
+              "choices": [
+                {
+                  "id": "wbChoiceDinner",
+                  "label": {
+                    "en": "Dinner / restaurant",
+                    "fr": "Dîner / restaurant"
+                  }
+                },
+                {
+                  "id": "wbChoiceParty",
+                  "label": {
+                    "en": "Party / night out",
+                    "fr": "Soirée / sortie"
+                  }
+                },
+                {
+                  "id": "wbChoiceAfterWork",
+                  "label": {
+                    "en": "After work",
+                    "fr": "Après le travail"
+                  }
+                },
+                {
+                  "id": "wbChoiceAlone",
+                  "label": {
+                    "en": "Alone at home",
+                    "fr": "Seul(e) à la maison"
+                  }
+                },
+                {
+                  "id": "wbChoiceDate",
+                  "label": {
+                    "en": "Date / romantic",
+                    "fr": "Rendez-vous amoureux"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "alcohol_q3",
+              "text": {
+                "en": "How can you participate in these situations without drinking?",
+                "fr": "Comment peux-tu participer à ces situations sans boire ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "id": "alcohol_ex2",
+          "title": {
+            "en": "Social pressure",
+            "fr": "La pression sociale"
+          },
+          "questions": [
+            {
+              "id": "alcohol_ex2_q1",
+              "text": {
+                "en": "How do you react when someone offers you a drink?",
+                "fr": "Comment réagis-tu quand on te propose un verre ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "alcohol_ex2_q2",
+              "text": {
+                "en": "What phrase can you prepare to decline?",
+                "fr": "Quelle phrase peux-tu préparer pour refuser ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "alcohol_ex2_q3",
+              "text": {
+                "en": "How much does others' judgment affect you (1-10)?",
+                "fr": "À quel point le jugement des autres t'affecte-t-il (1-10) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ]
+        },
+        {
+          "id": "alcohol_ex3",
+          "title": {
+            "en": "My social alternatives",
+            "fr": "Mes alternatives sociales"
+          },
+          "questions": [
+            {
+              "id": "alcohol_ex3_q1",
+              "text": {
+                "en": "What non-alcoholic drinks do you enjoy?",
+                "fr": "Quelles boissons non-alcoolisées apprécies-tu ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "alcohol_ex3_q2",
+              "text": {
+                "en": "What alcohol-free social activities do you enjoy?",
+                "fr": "Quelles activités sociales sans alcool apprécies-tu ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "targetAddictionTypes": [
+        "alcohol"
+      ]
+    },
+    {
+      "id": "specific_tobacco",
+      "title": {
+        "en": "My smoking rituals",
+        "fr": "Mes rituels fumeur"
+      },
+      "description": {
+        "en": "Understand your smoking habits and rituals",
+        "fr": "Comprendre tes habitudes et rituels liés au tabac"
+      },
+      "icon": "🚬",
+      "type": "specific",
+      "exercises": [
+        {
+          "id": "tobacco_ex1",
+          "title": {
+            "en": "My smoking moments",
+            "fr": "Mes moments cigarette"
+          },
+          "questions": [
+            {
+              "id": "tobacco_q1",
+              "text": {
+                "en": "Describe a typical day with cigarettes. When do you smoke?",
+                "fr": "Décris une journée type avec les cigarettes. Quand fumes-tu ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "tobacco_q2",
+              "text": {
+                "en": "What are your main smoking rituals?",
+                "fr": "Quels sont tes principaux rituels fumeur ?"
+              },
+              "type": "multipleChoice",
+              "isRequired": true,
+              "choices": [
+                {
+                  "id": "wbChoiceMorningCoffee",
+                  "label": {
+                    "en": "Morning coffee",
+                    "fr": "Café du matin"
+                  }
+                },
+                {
+                  "id": "wbChoiceAfterMeal",
+                  "label": {
+                    "en": "After a meal",
+                    "fr": "Après le repas"
+                  }
+                },
+                {
+                  "id": "wbChoiceWorkBreak",
+                  "label": {
+                    "en": "Work break",
+                    "fr": "Pause travail"
+                  }
+                },
+                {
+                  "id": "wbChoiceStressRelief",
+                  "label": {
+                    "en": "Stress relief",
+                    "fr": "Anti-stress"
+                  }
+                },
+                {
+                  "id": "wbChoiceSocialSmoking",
+                  "label": {
+                    "en": "Social smoking",
+                    "fr": "Fumer en société"
+                  }
+                },
+                {
+                  "id": "wbChoiceBeforeSleep",
+                  "label": {
+                    "en": "Before sleep",
+                    "fr": "Avant de dormir"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "tobacco_q3",
+              "text": {
+                "en": "Which ritual is hardest to give up? Why?",
+                "fr": "Quel rituel est le plus dur à lâcher ? Pourquoi ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "id": "tobacco_ex2",
+          "title": {
+            "en": "Physical dependence",
+            "fr": "La dépendance physique"
+          },
+          "questions": [
+            {
+              "id": "tobacco_ex2_q1",
+              "text": {
+                "en": "What physical sensations do you experience when you can't smoke?",
+                "fr": "Quelles sensations physiques ressens-tu quand tu ne peux pas fumer ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "tobacco_ex2_q2",
+              "text": {
+                "en": "What strategies help you manage physical cravings?",
+                "fr": "Quelles stratégies t'aident à gérer les envies physiques ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "tobacco_ex2_q3",
+              "text": {
+                "en": "How strong is your physical dependence (1-10)?",
+                "fr": "Quel est ton niveau de dépendance physique (1-10) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ]
+        },
+        {
+          "id": "tobacco_ex3",
+          "title": {
+            "en": "My replacement gestures",
+            "fr": "Mes gestes de remplacement"
+          },
+          "questions": [
+            {
+              "id": "tobacco_ex3_q1",
+              "text": {
+                "en": "What can replace the gesture of smoking for you?",
+                "fr": "Qu'est-ce qui peut remplacer le geste de fumer pour toi ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "tobacco_ex3_q2",
+              "text": {
+                "en": "What have you already tried as a substitute?",
+                "fr": "Qu'as-tu déjà essayé comme substitut ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "targetAddictionTypes": [
+        "tobacco"
+      ]
+    },
+    {
+      "id": "specific_drugs",
+      "title": {
+        "en": "Understanding my consumption",
+        "fr": "Comprendre ma consommation"
+      },
+      "description": {
+        "en": "Deep analysis of your substance use",
+        "fr": "Analyse approfondie de ta consommation de substances"
+      },
+      "icon": "💊",
+      "type": "specific",
+      "exercises": [
+        {
+          "id": "drugs_ex1",
+          "title": {
+            "en": "My relationship with the substance",
+            "fr": "Ma relation avec la substance"
+          },
+          "questions": [
+            {
+              "id": "drugs_q1",
+              "text": {
+                "en": "What does the substance give you that you can't find elsewhere?",
+                "fr": "Que t'apporte la substance que tu ne trouves pas ailleurs ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "drugs_q2",
+              "text": {
+                "en": "How has your relationship with the substance evolved?",
+                "fr": "Comment ta relation avec la substance a-t-elle évolué ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "drugs_q3",
+              "text": {
+                "en": "How dependent do you feel (1-10)?",
+                "fr": "À quel point te sens-tu dépendant(e) (1-10) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ]
+        },
+        {
+          "id": "drugs_ex2",
+          "title": {
+            "en": "Risks and consequences",
+            "fr": "Risques et conséquences"
+          },
+          "questions": [
+            {
+              "id": "drugs_ex2_q1",
+              "text": {
+                "en": "What risks have you taken under the influence?",
+                "fr": "Quels risques as-tu pris sous l'influence ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "drugs_ex2_q2",
+              "text": {
+                "en": "What consequences have you already experienced?",
+                "fr": "Quelles conséquences as-tu déjà vécues ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "drugs_ex2_q3",
+              "text": {
+                "en": "What do you fear could happen if you continue?",
+                "fr": "Que crains-tu qu'il arrive si tu continues ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "id": "drugs_ex3",
+          "title": {
+            "en": "My path to sobriety",
+            "fr": "Mon chemin vers la sobriété"
+          },
+          "questions": [
+            {
+              "id": "drugs_ex3_q1",
+              "text": {
+                "en": "What has been your longest period of sobriety? What helped?",
+                "fr": "Quelle a été ta plus longue période de sobriété ? Qu'est-ce qui t'a aidé ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "drugs_ex3_q2",
+              "text": {
+                "en": "What does sobriety mean to you concretely?",
+                "fr": "Que signifie la sobriété pour toi concrètement ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "targetAddictionTypes": [
+        "drugs"
+      ]
+    },
+    {
+      "id": "specific_gambling",
+      "title": {
+        "en": "Money and risk",
+        "fr": "L'argent et le risque"
+      },
+      "description": {
+        "en": "Explore your relationship with gambling and money",
+        "fr": "Explorer ta relation avec le jeu et l'argent"
+      },
+      "icon": "🎰",
+      "type": "specific",
+      "exercises": [
+        {
+          "id": "gambling_ex1",
+          "title": {
+            "en": "My relationship with gambling",
+            "fr": "Ma relation avec le jeu"
+          },
+          "questions": [
+            {
+              "id": "gambling_q1",
+              "text": {
+                "en": "What attracts you to gambling? The thrill, the money, escape?",
+                "fr": "Qu'est-ce qui t'attire dans le jeu ? Le frisson, l'argent, l'évasion ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "gambling_q2",
+              "text": {
+                "en": "What thoughts do you have before playing?",
+                "fr": "Quelles pensées as-tu avant de jouer ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "gambling_q3",
+              "text": {
+                "en": "How much control do you feel over your gambling (1-10)?",
+                "fr": "Quel contrôle as-tu sur tes jeux d'argent (1-10) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ]
+        },
+        {
+          "id": "gambling_ex2",
+          "title": {
+            "en": "Financial impact",
+            "fr": "L'impact financier"
+          },
+          "questions": [
+            {
+              "id": "gambling_ex2_q1",
+              "text": {
+                "en": "How much have you lost in total? What's the impact?",
+                "fr": "Combien as-tu perdu au total ? Quel impact cela a ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "gambling_ex2_q2",
+              "text": {
+                "en": "What could you have done with that money?",
+                "fr": "Qu'aurais-tu pu faire avec cet argent ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "id": "gambling_ex3",
+          "title": {
+            "en": "Rebuilding trust",
+            "fr": "Reconstruire la confiance"
+          },
+          "questions": [
+            {
+              "id": "gambling_ex3_q1",
+              "text": {
+                "en": "How has gambling affected trust in your relationships?",
+                "fr": "Comment le jeu a-t-il affecté la confiance dans tes relations ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "gambling_ex3_q2",
+              "text": {
+                "en": "What concrete steps can you take to rebuild trust?",
+                "fr": "Quels pas concrets peux-tu faire pour reconstruire la confiance ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "targetAddictionTypes": [
+        "gambling"
+      ]
+    },
+    {
+      "id": "specific_screens",
+      "title": {
+        "en": "My relationship with screens",
+        "fr": "Mon rapport aux écrans"
+      },
+      "description": {
+        "en": "Understand your screen habits and their impact",
+        "fr": "Comprendre tes habitudes d'écran et leur impact"
+      },
+      "icon": "📱",
+      "type": "specific",
+      "exercises": [
+        {
+          "id": "screens_ex1",
+          "title": {
+            "en": "My screen time",
+            "fr": "Mon temps d'écran"
+          },
+          "questions": [
+            {
+              "id": "screens_q1",
+              "text": {
+                "en": "What do you do on screens that you feel is problematic?",
+                "fr": "Que fais-tu sur les écrans que tu trouves problématique ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "screens_q2",
+              "text": {
+                "en": "How much time do you spend daily (1=<1h, 10=>8h)?",
+                "fr": "Combien de temps passes-tu par jour (1=<1h, 10=>8h) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            },
+            {
+              "id": "screens_q3",
+              "text": {
+                "en": "What activities do you neglect because of screen time?",
+                "fr": "Quelles activités négliges-tu à cause des écrans ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "id": "screens_ex2",
+          "title": {
+            "en": "My triggers for screen use",
+            "fr": "Mes déclencheurs d'écran"
+          },
+          "questions": [
+            {
+              "id": "screens_ex2_q1",
+              "text": {
+                "en": "When do you turn to your screens the most?",
+                "fr": "Quand te tournes-tu le plus vers tes écrans ?"
+              },
+              "type": "multipleChoice",
+              "isRequired": true,
+              "choices": [
+                {
+                  "id": "wbChoiceBeforeSleepScreen",
+                  "label": {
+                    "en": "Before sleep",
+                    "fr": "Avant de dormir"
+                  }
+                },
+                {
+                  "id": "wbChoiceWakingUp",
+                  "label": {
+                    "en": "Waking up",
+                    "fr": "Au réveil"
+                  }
+                },
+                {
+                  "id": "wbChoiceDuringWork",
+                  "label": {
+                    "en": "During work",
+                    "fr": "Pendant le travail"
+                  }
+                },
+                {
+                  "id": "wbChoicePublicTransport",
+                  "label": {
+                    "en": "Public transport",
+                    "fr": "Transports en commun"
+                  }
+                },
+                {
+                  "id": "wbChoiceAloneAtHome",
+                  "label": {
+                    "en": "Alone at home",
+                    "fr": "Seul(e) à la maison"
+                  }
+                },
+                {
+                  "id": "wbChoiceWaiting",
+                  "label": {
+                    "en": "Waiting / boredom",
+                    "fr": "Attente / ennui"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "screens_ex2_q2",
+              "text": {
+                "en": "What does screen time replace for you emotionally?",
+                "fr": "Que remplace le temps d'écran pour toi émotionnellement ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "id": "screens_ex3",
+          "title": {
+            "en": "My digital detox plan",
+            "fr": "Mon plan de détox numérique"
+          },
+          "questions": [
+            {
+              "id": "screens_ex3_q1",
+              "text": {
+                "en": "What rules can you set for your screen use?",
+                "fr": "Quelles règles peux-tu te fixer pour ton usage des écrans ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "screens_ex3_q2",
+              "text": {
+                "en": "What offline activities would you like to do more?",
+                "fr": "Quelles activités hors écran aimerais-tu faire davantage ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "targetAddictionTypes": [
+        "gaming",
+        "socialMedia",
+        "pornography"
+      ]
+    },
+    {
+      "id": "specific_food",
+      "title": {
+        "en": "Emotions and food",
+        "fr": "Émotions et nourriture"
+      },
+      "description": {
+        "en": "Explore the link between your emotions and eating",
+        "fr": "Explorer le lien entre tes émotions et l'alimentation"
+      },
+      "icon": "🍽️",
+      "type": "specific",
+      "exercises": [
+        {
+          "id": "food_ex1",
+          "title": {
+            "en": "My emotional eating",
+            "fr": "Mon alimentation émotionnelle"
+          },
+          "questions": [
+            {
+              "id": "food_q1",
+              "text": {
+                "en": "In what moments do you eat without real hunger?",
+                "fr": "Dans quels moments manges-tu sans vraie faim ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "food_q2",
+              "text": {
+                "en": "What role does food play for you emotionally?",
+                "fr": "Quel rôle joue la nourriture émotionnellement pour toi ?"
+              },
+              "type": "multipleChoice",
+              "isRequired": true,
+              "choices": [
+                {
+                  "id": "wbChoiceComfort",
+                  "label": {
+                    "en": "Comfort",
+                    "fr": "Réconfort"
+                  }
+                },
+                {
+                  "id": "wbChoiceReward",
+                  "label": {
+                    "en": "Reward",
+                    "fr": "Récompense"
+                  }
+                },
+                {
+                  "id": "wbChoiceBoredomFood",
+                  "label": {
+                    "en": "Boredom",
+                    "fr": "Ennui"
+                  }
+                },
+                {
+                  "id": "wbChoiceStressFood",
+                  "label": {
+                    "en": "Stress",
+                    "fr": "Stress"
+                  }
+                },
+                {
+                  "id": "wbChoiceSadnessFood",
+                  "label": {
+                    "en": "Sadness",
+                    "fr": "Tristesse"
+                  }
+                },
+                {
+                  "id": "wbChoiceSocialFood",
+                  "label": {
+                    "en": "Social occasions",
+                    "fr": "Événements sociaux"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "food_q3",
+              "text": {
+                "en": "How do you feel after emotional eating?",
+                "fr": "Comment te sens-tu après avoir mangé sous le coup de l'émotion ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        },
+        {
+          "id": "food_ex2",
+          "title": {
+            "en": "Hunger signals",
+            "fr": "Les signaux de faim"
+          },
+          "questions": [
+            {
+              "id": "food_ex2_q1",
+              "text": {
+                "en": "How do you distinguish real hunger from emotional hunger?",
+                "fr": "Comment distingues-tu la vraie faim de la faim émotionnelle ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "food_ex2_q2",
+              "text": {
+                "en": "What could you do instead of eating when you're emotional?",
+                "fr": "Que pourrais-tu faire au lieu de manger quand tu es émotif/émotive ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "food_ex2_q3",
+              "text": {
+                "en": "How aware are you of your hunger signals (1-10)?",
+                "fr": "À quel point es-tu conscient(e) de tes signaux de faim (1-10) ?"
+              },
+              "type": "scale",
+              "isRequired": true,
+              "scaleMin": 1,
+              "scaleMax": 10
+            }
+          ]
+        },
+        {
+          "id": "food_ex3",
+          "title": {
+            "en": "My healthy relationship with food",
+            "fr": "Ma relation saine avec la nourriture"
+          },
+          "questions": [
+            {
+              "id": "food_ex3_q1",
+              "text": {
+                "en": "What does a healthy relationship with food mean to you?",
+                "fr": "Qu'est-ce qu'une relation saine avec la nourriture signifie pour toi ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            },
+            {
+              "id": "food_ex3_q2",
+              "text": {
+                "en": "What small change can you make starting today?",
+                "fr": "Quel petit changement peux-tu faire dès aujourd'hui ?"
+              },
+              "type": "freeText",
+              "isRequired": true
+            }
+          ]
+        }
+      ],
+      "targetAddictionTypes": [
+        "food"
+      ]
+    }
+  ]
+}
