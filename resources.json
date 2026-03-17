@@ -1,0 +1,104 @@
+{
+  "version": 1,
+  "resources": [
+    {
+      "id": "fr_3114",
+      "name": { "en": "3114 — Suicide Prevention", "fr": "3114 — Prévention du suicide" },
+      "description": { "en": "National suicide prevention hotline. Free, confidential, 24/7.", "fr": "Numéro national de prévention du suicide. Gratuit, confidentiel, 24h/24." },
+      "phone": "3114",
+      "website": "https://3114.fr",
+      "countryCode": "FR",
+      "targetAddictions": [],
+      "isEmergency": true,
+      "schedule": "24h/24, 7j/7"
+    },
+    {
+      "id": "fr_sos_amitie",
+      "name": { "en": "SOS Amitié", "fr": "SOS Amitié" },
+      "description": { "en": "Listening and support for people in distress.", "fr": "Écoute et soutien pour les personnes en détresse." },
+      "phone": "09 72 39 40 50",
+      "website": "https://www.sos-amitie.com",
+      "donateUrl": "https://www.sos-amitie.com/don",
+      "countryCode": "FR",
+      "targetAddictions": [],
+      "isEmergency": true,
+      "schedule": "24h/24, 7j/7"
+    },
+    {
+      "id": "fr_fil_sante",
+      "name": { "en": "Fil Santé Jeunes", "fr": "Fil Santé Jeunes" },
+      "description": { "en": "Health information for young people (12-25).", "fr": "Information santé pour les jeunes (12-25 ans)." },
+      "phone": "0 800 235 236",
+      "website": "https://www.filsantejeunes.com",
+      "countryCode": "FR",
+      "targetAddictions": [],
+      "isEmergency": false,
+      "schedule": "9h-23h, 7j/7"
+    },
+    {
+      "id": "fr_drogues_info",
+      "name": { "en": "Drogues Info Service", "fr": "Drogues Info Service" },
+      "description": { "en": "Information and support about drugs. Free and anonymous.", "fr": "Information et aide sur les drogues. Gratuit et anonyme." },
+      "phone": "0 800 23 13 13",
+      "website": "https://www.drogues-info-service.fr",
+      "countryCode": "FR",
+      "targetAddictions": ["drugs"],
+      "isEmergency": false,
+      "schedule": "8h-2h, 7j/7"
+    },
+    {
+      "id": "fr_alcool_info",
+      "name": { "en": "Alcool Info Service", "fr": "Alcool Info Service" },
+      "description": { "en": "Listening and information about alcohol.", "fr": "Écoute et information sur l'alcool." },
+      "phone": "0 980 980 930",
+      "website": "https://www.alcool-info-service.fr",
+      "countryCode": "FR",
+      "targetAddictions": ["alcohol"],
+      "isEmergency": false,
+      "schedule": "8h-2h, 7j/7"
+    },
+    {
+      "id": "fr_tabac_info",
+      "name": { "en": "Tabac Info Service", "fr": "Tabac Info Service" },
+      "description": { "en": "Coaching and support to quit smoking.", "fr": "Accompagnement et aide pour arrêter de fumer." },
+      "phone": "39 89",
+      "website": "https://www.tabac-info-service.fr",
+      "countryCode": "FR",
+      "targetAddictions": ["tobacco"],
+      "isEmergency": false,
+      "schedule": "8h-20h, lun-sam"
+    },
+    {
+      "id": "fr_joueurs_info",
+      "name": { "en": "Joueurs Info Service", "fr": "Joueurs Info Service" },
+      "description": { "en": "Help for problem gambling.", "fr": "Aide pour le jeu problématique." },
+      "phone": "09 74 75 13 13",
+      "website": "https://www.joueurs-info-service.fr",
+      "countryCode": "FR",
+      "targetAddictions": ["gambling"],
+      "isEmergency": false,
+      "schedule": "8h-2h, 7j/7"
+    },
+    {
+      "id": "fr_anorexie",
+      "name": { "en": "Anorexie Boulimie Info Écoute", "fr": "Anorexie Boulimie Info Écoute" },
+      "description": { "en": "Listening for eating disorders.", "fr": "Écoute pour les troubles alimentaires." },
+      "phone": "0 810 037 037",
+      "website": "https://www.anorexieboulimie-afdas.fr",
+      "countryCode": "FR",
+      "targetAddictions": ["food"],
+      "isEmergency": false
+    },
+    {
+      "id": "fr_net_ecoute",
+      "name": { "en": "Net Écoute — 3018", "fr": "Net Écoute — 3018" },
+      "description": { "en": "Help for digital violence and cyber-addictions.", "fr": "Aide contre les violences numériques et les cyber-addictions." },
+      "phone": "3018",
+      "website": "https://www.e-enfance.org",
+      "countryCode": "FR",
+      "targetAddictions": ["socialMedia", "gaming"],
+      "isEmergency": false,
+      "schedule": "9h-23h, 7j/7"
+    }
+  ]
+}
