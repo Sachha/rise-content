@@ -1,0 +1,510 @@
+{
+  "version": 1,
+  "addictionTypes": [
+    {
+      "id": "alcohol",
+      "name": { "en": "Alcohol", "fr": "Alcool" },
+      "emoji": "🍺",
+      "active": true,
+      "category": "substance",
+      "subtypes": null,
+      "availableUnits": ["drinks", "milliliters", "liters"],
+      "defaultUnit": "drinks",
+      "formConfig": {
+        "hasConsumption": true,
+        "hasTime": false,
+        "hasCost": true
+      },
+      "healthMilestones": [
+        { "durationHours": 24, "title": { "en": "Liver begins recovery", "fr": "Le foie commence \u00e0 r\u00e9cup\u00e9rer" }, "description": { "en": "Toxin levels drop, the liver starts regenerating.", "fr": "Le taux de toxines diminue, le foie commence sa r\u00e9g\u00e9n\u00e9ration." }, "healthPercent": 0.10 },
+        { "durationHours": 72, "title": { "en": "Withdrawal symptoms peak", "fr": "Pic des sympt\u00f4mes de sevrage" }, "description": { "en": "The body fights withdrawal — worst phase passes.", "fr": "Le corps combat le sevrage \u2014 la phase la plus difficile passe." }, "healthPercent": 0.20 },
+        { "durationHours": 168, "title": { "en": "Sleep improves", "fr": "Le sommeil s\u2019am\u00e9liore" }, "description": { "en": "Sleep cycles begin to normalize, more energy.", "fr": "Les cycles de sommeil commencent \u00e0 se normaliser, plus d\u2019\u00e9nergie." }, "healthPercent": 0.30 },
+        { "durationHours": 336, "title": { "en": "Mental clarity returns", "fr": "La clart\u00e9 mentale revient" }, "description": { "en": "Brain chemistry rebalances, sharper thinking.", "fr": "La chimie du cerveau se r\u00e9\u00e9quilibre, la pens\u00e9e s\u2019affine." }, "healthPercent": 0.40 },
+        { "durationHours": 720, "title": { "en": "Liver fat reduces", "fr": "La graisse h\u00e9patique diminue" }, "description": { "en": "Fat buildup in the liver starts to reverse.", "fr": "L\u2019accumulation de graisse dans le foie commence \u00e0 se r\u00e9sorber." }, "healthPercent": 0.55 },
+        { "durationHours": 2160, "title": { "en": "Blood pressure normalizes", "fr": "La pression art\u00e9rielle se normalise" }, "description": { "en": "Cardiovascular health improves significantly.", "fr": "La sant\u00e9 cardiovasculaire s\u2019am\u00e9liore significativement." }, "healthPercent": 0.70 },
+        { "durationHours": 4320, "title": { "en": "Liver repair advanced", "fr": "R\u00e9paration avanc\u00e9e du foie" }, "description": { "en": "Significant liver cell regeneration achieved.", "fr": "R\u00e9g\u00e9n\u00e9ration significative des cellules h\u00e9patiques." }, "healthPercent": 0.85 },
+        { "durationHours": 8760, "title": { "en": "Full recovery potential", "fr": "Potentiel de r\u00e9cup\u00e9ration complet" }, "description": { "en": "Major organs fully recovered. Cancer risk greatly reduced.", "fr": "Organes majeurs enti\u00e8rement r\u00e9cup\u00e9r\u00e9s. Risque de cancer tr\u00e8s r\u00e9duit." }, "healthPercent": 1.0 }
+      ]
+    },
+    {
+      "id": "tobacco",
+      "name": { "en": "Tobacco", "fr": "Tabac" },
+      "emoji": "🚬",
+      "active": true,
+      "category": "substance",
+      "subtypes": null,
+      "availableUnits": ["cigarettes", "grams"],
+      "defaultUnit": "cigarettes",
+      "formConfig": {
+        "hasConsumption": true,
+        "hasTime": false,
+        "hasCost": true
+      },
+      "healthMilestones": [
+        { "durationHours": 0.33, "title": { "en": "Heart rate normalizes", "fr": "Le rythme cardiaque se normalise" }, "description": { "en": "Blood pressure and heart rate begin to drop.", "fr": "La pression art\u00e9rielle et le rythme cardiaque commencent \u00e0 baisser." }, "healthPercent": 0.05 },
+        { "durationHours": 8, "title": { "en": "Oxygen levels rise", "fr": "Le taux d\u2019oxyg\u00e8ne augmente" }, "description": { "en": "Carbon monoxide levels drop, oxygen increases.", "fr": "Le taux de monoxyde de carbone baisse, l\u2019oxyg\u00e8ne augmente." }, "healthPercent": 0.10 },
+        { "durationHours": 24, "title": { "en": "Heart attack risk drops", "fr": "Le risque de crise cardiaque diminue" }, "description": { "en": "Risk of heart attack begins to decrease.", "fr": "Le risque de crise cardiaque commence \u00e0 diminuer." }, "healthPercent": 0.15 },
+        { "durationHours": 48, "title": { "en": "Senses return", "fr": "Les sens reviennent" }, "description": { "en": "Taste and smell begin to improve.", "fr": "Le go\u00fbt et l\u2019odorat commencent \u00e0 s\u2019am\u00e9liorer." }, "healthPercent": 0.20 },
+        { "durationHours": 72, "title": { "en": "Breathing easier", "fr": "Respiration plus facile" }, "description": { "en": "Bronchial tubes relax, breathing becomes easier.", "fr": "Les bronches se rel\u00e2chent, respirer devient plus facile." }, "healthPercent": 0.25 },
+        { "durationHours": 336, "title": { "en": "Circulation improves", "fr": "La circulation s\u2019am\u00e9liore" }, "description": { "en": "Blood flow improves throughout the body.", "fr": "La circulation sanguine s\u2019am\u00e9liore dans tout le corps." }, "healthPercent": 0.35 },
+        { "durationHours": 720, "title": { "en": "Lung function improves", "fr": "La fonction pulmonaire s\u2019am\u00e9liore" }, "description": { "en": "Lung capacity increases up to 30%.", "fr": "La capacit\u00e9 pulmonaire augmente jusqu\u2019\u00e0 30%." }, "healthPercent": 0.45 },
+        { "durationHours": 2160, "title": { "en": "Cilia regrow", "fr": "Les cils bronchiques repoussent" }, "description": { "en": "Lungs start clearing out mucus and debris.", "fr": "Les poumons commencent \u00e0 \u00e9vacuer le mucus et les d\u00e9bris." }, "healthPercent": 0.55 },
+        { "durationHours": 8760, "title": { "en": "Heart disease risk halved", "fr": "Risque cardiaque divis\u00e9 par 2" }, "description": { "en": "Risk of coronary disease is half that of a smoker.", "fr": "Le risque de maladie coronarienne est divis\u00e9 par 2 par rapport \u00e0 un fumeur." }, "healthPercent": 0.70 },
+        { "durationHours": 43800, "title": { "en": "Lung cancer risk halved", "fr": "Risque de cancer du poumon divis\u00e9 par 2" }, "description": { "en": "Risk of lung cancer drops to half that of a smoker.", "fr": "Le risque de cancer du poumon tombe \u00e0 la moiti\u00e9 de celui d\u2019un fumeur." }, "healthPercent": 0.85 },
+        { "durationHours": 87600, "title": { "en": "Stroke risk normalized", "fr": "Risque d\u2019AVC normalis\u00e9" }, "description": { "en": "Risk of stroke equals that of a non-smoker.", "fr": "Le risque d\u2019AVC \u00e9gale celui d\u2019un non-fumeur." }, "healthPercent": 0.95 },
+        { "durationHours": 131400, "title": { "en": "Heart disease risk normalized", "fr": "Risque cardiaque normalis\u00e9" }, "description": { "en": "Risk of heart disease equals that of a non-smoker.", "fr": "Le risque de maladie cardiaque \u00e9gale celui d\u2019un non-fumeur." }, "healthPercent": 1.0 }
+      ]
+    },
+    {
+      "id": "drugs",
+      "name": { "en": "Drugs", "fr": "Drogues" },
+      "emoji": "💊",
+      "active": true,
+      "category": "substance",
+      "subtypes": [
+        {
+          "id": "cannabis",
+          "name": { "en": "Cannabis / Weed", "fr": "Cannabis" },
+          "emoji": "🌿",
+          "active": true,
+          "availableUnits": ["joints", "grams"],
+          "defaultUnit": "joints",
+          "healthMilestones": [
+            { "durationHours": 24, "title": { "en": "THC levels dropping", "fr": "Le taux de THC diminue" }, "description": { "en": "The body starts eliminating THC.", "fr": "Le corps commence \u00e0 \u00e9liminer le THC." }, "healthPercent": 0.10 },
+            { "durationHours": 72, "title": { "en": "Withdrawal peak passes", "fr": "Le pic de sevrage passe" }, "description": { "en": "Irritability and sleep issues begin to fade.", "fr": "L\u2019irritabilit\u00e9 et les probl\u00e8mes de sommeil commencent \u00e0 diminuer." }, "healthPercent": 0.20 },
+            { "durationHours": 168, "title": { "en": "Appetite normalizes", "fr": "L\u2019app\u00e9tit se normalise" }, "description": { "en": "Appetite and eating patterns stabilize.", "fr": "L\u2019app\u00e9tit et les habitudes alimentaires se stabilisent." }, "healthPercent": 0.30 },
+            { "durationHours": 336, "title": { "en": "Lung recovery begins", "fr": "Les poumons r\u00e9cup\u00e8rent" }, "description": { "en": "Respiratory function starts improving.", "fr": "La fonction respiratoire commence \u00e0 s\u2019am\u00e9liorer." }, "healthPercent": 0.45 },
+            { "durationHours": 720, "title": { "en": "Memory improves", "fr": "La m\u00e9moire s\u2019am\u00e9liore" }, "description": { "en": "Short-term memory and concentration improve.", "fr": "La m\u00e9moire \u00e0 court terme et la concentration s\u2019am\u00e9liorent." }, "healthPercent": 0.60 },
+            { "durationHours": 2160, "title": { "en": "THC fully cleared", "fr": "THC compl\u00e8tement \u00e9limin\u00e9" }, "description": { "en": "All THC metabolites eliminated from the body.", "fr": "Tous les m\u00e9tabolites du THC sont \u00e9limin\u00e9s du corps." }, "healthPercent": 0.80 },
+            { "durationHours": 4320, "title": { "en": "Full cognitive recovery", "fr": "R\u00e9cup\u00e9ration cognitive compl\u00e8te" }, "description": { "en": "Cognitive functions fully restored.", "fr": "Fonctions cognitives enti\u00e8rement restaur\u00e9es." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "cocaine",
+          "name": { "en": "Cocaine", "fr": "Coca\u00efne" },
+          "emoji": "❄️",
+          "active": true,
+          "availableUnits": ["grams", "milligrams", "times"],
+          "defaultUnit": "grams",
+          "healthMilestones": [
+            { "durationHours": 24, "title": { "en": "Crash phase begins", "fr": "La phase de crash commence" }, "description": { "en": "Intense fatigue as the body adjusts.", "fr": "Fatigue intense alors que le corps s\u2019ajuste." }, "healthPercent": 0.10 },
+            { "durationHours": 72, "title": { "en": "Dopamine rebalancing", "fr": "R\u00e9\u00e9quilibrage de la dopamine" }, "description": { "en": "Brain begins restoring natural dopamine levels.", "fr": "Le cerveau commence \u00e0 restaurer les niveaux naturels de dopamine." }, "healthPercent": 0.20 },
+            { "durationHours": 168, "title": { "en": "Physical symptoms ease", "fr": "Les sympt\u00f4mes physiques s\u2019att\u00e9nuent" }, "description": { "en": "Body aches and fatigue start to diminish.", "fr": "Les douleurs corporelles et la fatigue commencent \u00e0 diminuer." }, "healthPercent": 0.30 },
+            { "durationHours": 720, "title": { "en": "Mood stabilizes", "fr": "L\u2019humeur se stabilise" }, "description": { "en": "Depression and anxiety begin to lift.", "fr": "La d\u00e9pression et l\u2019anxi\u00e9t\u00e9 commencent \u00e0 se dissiper." }, "healthPercent": 0.45 },
+            { "durationHours": 2160, "title": { "en": "Brain pathways healing", "fr": "Les voies c\u00e9r\u00e9brales gu\u00e9rissent" }, "description": { "en": "Neural reward pathways recovering significantly.", "fr": "Les voies de r\u00e9compense neuronales r\u00e9cup\u00e8rent significativement." }, "healthPercent": 0.65 },
+            { "durationHours": 4320, "title": { "en": "Cardiovascular healing", "fr": "Gu\u00e9rison cardiovasculaire" }, "description": { "en": "Heart and vascular system largely recovered.", "fr": "Le c\u0153ur et le syst\u00e8me vasculaire sont largement r\u00e9cup\u00e9r\u00e9s." }, "healthPercent": 0.85 },
+            { "durationHours": 8760, "title": { "en": "Full neurological recovery", "fr": "R\u00e9cup\u00e9ration neurologique compl\u00e8te" }, "description": { "en": "Brain chemistry and reward system fully restored.", "fr": "La chimie c\u00e9r\u00e9brale et le syst\u00e8me de r\u00e9compense enti\u00e8rement restaur\u00e9s." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "heroin",
+          "name": { "en": "Heroin", "fr": "H\u00e9ro\u00efne" },
+          "emoji": "💉",
+          "active": true,
+          "availableUnits": ["grams", "milligrams", "times"],
+          "defaultUnit": "grams",
+          "healthMilestones": [
+            { "durationHours": 24, "title": { "en": "Withdrawal begins", "fr": "Le sevrage commence" }, "description": { "en": "Muscle aches, anxiety as withdrawal starts.", "fr": "Douleurs musculaires, anxi\u00e9t\u00e9 au d\u00e9but du sevrage." }, "healthPercent": 0.08 },
+            { "durationHours": 72, "title": { "en": "Acute withdrawal peaks", "fr": "Pic du sevrage aigu" }, "description": { "en": "Most intense symptoms — the hardest phase passes.", "fr": "Sympt\u00f4mes les plus intenses \u2014 la phase la plus dure passe." }, "healthPercent": 0.15 },
+            { "durationHours": 168, "title": { "en": "Physical recovery starts", "fr": "La r\u00e9cup\u00e9ration physique commence" }, "description": { "en": "Physical symptoms start to ease significantly.", "fr": "Les sympt\u00f4mes physiques commencent \u00e0 s\u2019att\u00e9nuer significativement." }, "healthPercent": 0.25 },
+            { "durationHours": 336, "title": { "en": "Sleep improves", "fr": "Le sommeil s\u2019am\u00e9liore" }, "description": { "en": "Sleep patterns begin to normalize.", "fr": "Les sch\u00e9mas de sommeil commencent \u00e0 se normaliser." }, "healthPercent": 0.35 },
+            { "durationHours": 720, "title": { "en": "Endorphin recovery", "fr": "R\u00e9cup\u00e9ration des endorphines" }, "description": { "en": "Natural endorphin production resumes.", "fr": "La production naturelle d\u2019endorphines reprend." }, "healthPercent": 0.50 },
+            { "durationHours": 2160, "title": { "en": "Neural healing progresses", "fr": "La gu\u00e9rison neuronale progresse" }, "description": { "en": "Brain pathways continue significant recovery.", "fr": "Les voies c\u00e9r\u00e9brales poursuivent une r\u00e9cup\u00e9ration significative." }, "healthPercent": 0.65 },
+            { "durationHours": 4320, "title": { "en": "Immune system recovery", "fr": "R\u00e9cup\u00e9ration du syst\u00e8me immunitaire" }, "description": { "en": "Immune function significantly improved.", "fr": "La fonction immunitaire s\u2019est significativement am\u00e9lior\u00e9e." }, "healthPercent": 0.80 },
+            { "durationHours": 8760, "title": { "en": "Full recovery potential", "fr": "Potentiel de r\u00e9cup\u00e9ration complet" }, "description": { "en": "Major physiological recovery achieved.", "fr": "R\u00e9cup\u00e9ration physiologique majeure atteinte." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "mdma",
+          "name": { "en": "MDMA / Ecstasy", "fr": "MDMA / Ecstasy" },
+          "emoji": "💊",
+          "active": true,
+          "availableUnits": ["grams", "milligrams", "times"],
+          "defaultUnit": "milligrams",
+          "healthMilestones": [
+            { "durationHours": 24, "title": { "en": "Serotonin crash", "fr": "Crash de s\u00e9rotonine" }, "description": { "en": "Body begins serotonin recovery.", "fr": "Le corps commence la r\u00e9cup\u00e9ration de s\u00e9rotonine." }, "healthPercent": 0.10 },
+            { "durationHours": 168, "title": { "en": "Mood stabilizes", "fr": "L\u2019humeur se stabilise" }, "description": { "en": "\"Tuesday blues\" phase passes.", "fr": "La phase de d\u00e9prime post-consommation passe." }, "healthPercent": 0.25 },
+            { "durationHours": 720, "title": { "en": "Serotonin levels recover", "fr": "Les niveaux de s\u00e9rotonine r\u00e9cup\u00e8rent" }, "description": { "en": "Neurotransmitter balance improving.", "fr": "L\u2019\u00e9quilibre des neurotransmetteurs s\u2019am\u00e9liore." }, "healthPercent": 0.45 },
+            { "durationHours": 2160, "title": { "en": "Neural connections rebuild", "fr": "Les connexions neuronales se reconstruisent" }, "description": { "en": "Significant neural pathway recovery.", "fr": "R\u00e9cup\u00e9ration significative des voies neuronales." }, "healthPercent": 0.70 },
+            { "durationHours": 4320, "title": { "en": "Cognitive recovery", "fr": "R\u00e9cup\u00e9ration cognitive" }, "description": { "en": "Memory and cognitive function largely restored.", "fr": "La m\u00e9moire et la fonction cognitive sont largement restaur\u00e9es." }, "healthPercent": 0.85 },
+            { "durationHours": 8760, "title": { "en": "Full serotonin recovery", "fr": "R\u00e9cup\u00e9ration compl\u00e8te de la s\u00e9rotonine" }, "description": { "en": "Serotonin system fully healed.", "fr": "Le syst\u00e8me s\u00e9rotoninergique enti\u00e8rement gu\u00e9ri." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "amphetamines",
+          "name": { "en": "Amphetamines / Speed", "fr": "Amph\u00e9tamines" },
+          "emoji": "⚡",
+          "active": true,
+          "availableUnits": ["grams", "milligrams", "times"],
+          "defaultUnit": "grams",
+          "healthMilestones": [
+            { "durationHours": 24, "title": { "en": "Crash phase", "fr": "Phase de crash" }, "description": { "en": "Intense fatigue and hunger as the body recovers.", "fr": "Fatigue intense et faim alors que le corps r\u00e9cup\u00e8re." }, "healthPercent": 0.10 },
+            { "durationHours": 168, "title": { "en": "Sleep normalizing", "fr": "Le sommeil se normalise" }, "description": { "en": "Sleep patterns begin to regularize.", "fr": "Les sch\u00e9mas de sommeil commencent \u00e0 se r\u00e9gulariser." }, "healthPercent": 0.20 },
+            { "durationHours": 336, "title": { "en": "Mood improves", "fr": "L\u2019humeur s\u2019am\u00e9liore" }, "description": { "en": "Depression and irritability begin to lift.", "fr": "La d\u00e9pression et l\u2019irritabilit\u00e9 commencent \u00e0 se dissiper." }, "healthPercent": 0.35 },
+            { "durationHours": 720, "title": { "en": "Dopamine recovery", "fr": "R\u00e9cup\u00e9ration de la dopamine" }, "description": { "en": "Natural dopamine production resumes.", "fr": "La production naturelle de dopamine reprend." }, "healthPercent": 0.50 },
+            { "durationHours": 2160, "title": { "en": "Cognitive function improves", "fr": "La fonction cognitive s\u2019am\u00e9liore" }, "description": { "en": "Concentration and memory significantly better.", "fr": "La concentration et la m\u00e9moire s\u2019am\u00e9liorent significativement." }, "healthPercent": 0.70 },
+            { "durationHours": 4320, "title": { "en": "Cardiovascular healing", "fr": "Gu\u00e9rison cardiovasculaire" }, "description": { "en": "Heart and vascular system recovering.", "fr": "Le c\u0153ur et le syst\u00e8me vasculaire r\u00e9cup\u00e8rent." }, "healthPercent": 0.85 },
+            { "durationHours": 8760, "title": { "en": "Full recovery", "fr": "R\u00e9cup\u00e9ration compl\u00e8te" }, "description": { "en": "Neurological and physical recovery achieved.", "fr": "R\u00e9cup\u00e9ration neurologique et physique atteinte." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "methamphetamine",
+          "name": { "en": "Methamphetamine", "fr": "M\u00e9thamph\u00e9tamine" },
+          "emoji": "🔥",
+          "active": true,
+          "availableUnits": ["grams", "milligrams", "times"],
+          "defaultUnit": "grams",
+          "healthMilestones": [
+            { "durationHours": 24, "title": { "en": "Crash begins", "fr": "Le crash commence" }, "description": { "en": "Extreme exhaustion as stimulant effect wears off.", "fr": "\u00c9puisement extr\u00eame alors que l\u2019effet stimulant se dissipe." }, "healthPercent": 0.08 },
+            { "durationHours": 168, "title": { "en": "Sleep returning", "fr": "Le sommeil revient" }, "description": { "en": "Sleep patterns slowly improving.", "fr": "Les sch\u00e9mas de sommeil s\u2019am\u00e9liorent lentement." }, "healthPercent": 0.15 },
+            { "durationHours": 336, "title": { "en": "Physical symptoms ease", "fr": "Les sympt\u00f4mes physiques s\u2019att\u00e9nuent" }, "description": { "en": "Body aches and fatigue diminishing.", "fr": "Les douleurs corporelles et la fatigue diminuent." }, "healthPercent": 0.25 },
+            { "durationHours": 720, "title": { "en": "Mood improvement", "fr": "Am\u00e9lioration de l\u2019humeur" }, "description": { "en": "Anhedonia begins to lift, some pleasure returns.", "fr": "L\u2019anh\u00e9donie commence \u00e0 se dissiper, un peu de plaisir revient." }, "healthPercent": 0.35 },
+            { "durationHours": 2160, "title": { "en": "Dopamine receptors healing", "fr": "Les r\u00e9cepteurs de dopamine gu\u00e9rissent" }, "description": { "en": "Brain reward system slowly rebuilding.", "fr": "Le syst\u00e8me de r\u00e9compense du cerveau se reconstruit lentement." }, "healthPercent": 0.50 },
+            { "durationHours": 4320, "title": { "en": "Cognitive recovery", "fr": "R\u00e9cup\u00e9ration cognitive" }, "description": { "en": "Memory and executive function improving.", "fr": "La m\u00e9moire et les fonctions ex\u00e9cutives s\u2019am\u00e9liorent." }, "healthPercent": 0.70 },
+            { "durationHours": 8760, "title": { "en": "Significant brain recovery", "fr": "R\u00e9cup\u00e9ration c\u00e9r\u00e9brale significative" }, "description": { "en": "Major neural pathway healing achieved.", "fr": "Gu\u00e9rison majeure des voies neuronales atteinte." }, "healthPercent": 0.85 },
+            { "durationHours": 17520, "title": { "en": "Full recovery potential", "fr": "Potentiel de r\u00e9cup\u00e9ration complet" }, "description": { "en": "Brain structure largely restored to pre-use state.", "fr": "La structure c\u00e9r\u00e9brale largement restaur\u00e9e \u00e0 l\u2019\u00e9tat d\u2019avant consommation." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "lsd",
+          "name": { "en": "LSD / Acid", "fr": "LSD / Acide" },
+          "emoji": "🔮",
+          "active": true,
+          "availableUnits": ["times", "milligrams"],
+          "defaultUnit": "times",
+          "healthMilestones": null
+        },
+        {
+          "id": "mushrooms",
+          "name": { "en": "Magic Mushrooms", "fr": "Champignons magiques" },
+          "emoji": "🍄",
+          "active": true,
+          "availableUnits": ["grams", "milligrams"],
+          "defaultUnit": "grams",
+          "healthMilestones": null
+        },
+        {
+          "id": "opioids",
+          "name": { "en": "Opioids (prescription)", "fr": "Opio\u00efdes (prescription)" },
+          "emoji": "💊",
+          "active": true,
+          "availableUnits": ["milligrams", "times"],
+          "defaultUnit": "milligrams",
+          "healthMilestones": [
+            { "durationHours": 24, "title": { "en": "Withdrawal starts", "fr": "Le sevrage commence" }, "description": { "en": "Body adjusting to absence of opioids.", "fr": "Le corps s\u2019adapte \u00e0 l\u2019absence d\u2019opio\u00efdes." }, "healthPercent": 0.10 },
+            { "durationHours": 72, "title": { "en": "Peak symptoms pass", "fr": "Le pic des sympt\u00f4mes passe" }, "description": { "en": "Worst withdrawal symptoms begin to fade.", "fr": "Les pires sympt\u00f4mes de sevrage commencent \u00e0 dispara\u00eetre." }, "healthPercent": 0.20 },
+            { "durationHours": 168, "title": { "en": "Physical recovery starts", "fr": "La r\u00e9cup\u00e9ration physique commence" }, "description": { "en": "Body functions normalizing.", "fr": "Les fonctions corporelles se normalisent." }, "healthPercent": 0.35 },
+            { "durationHours": 720, "title": { "en": "Pain sensitivity normalizes", "fr": "La sensibilit\u00e9 \u00e0 la douleur se normalise" }, "description": { "en": "Natural pain response returning.", "fr": "La r\u00e9ponse naturelle \u00e0 la douleur revient." }, "healthPercent": 0.50 },
+            { "durationHours": 2160, "title": { "en": "Endorphin recovery", "fr": "R\u00e9cup\u00e9ration des endorphines" }, "description": { "en": "Natural endorphin production restored.", "fr": "La production naturelle d\u2019endorphines est restaur\u00e9e." }, "healthPercent": 0.70 },
+            { "durationHours": 4320, "title": { "en": "Mood stabilizes", "fr": "L\u2019humeur se stabilise" }, "description": { "en": "Depression and anxiety largely resolved.", "fr": "La d\u00e9pression et l\u2019anxi\u00e9t\u00e9 sont en grande partie r\u00e9solues." }, "healthPercent": 0.85 },
+            { "durationHours": 8760, "title": { "en": "Full recovery", "fr": "R\u00e9cup\u00e9ration compl\u00e8te" }, "description": { "en": "Neurological and physical recovery achieved.", "fr": "R\u00e9cup\u00e9ration neurologique et physique atteinte." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "benzodiazepines",
+          "name": { "en": "Benzodiazepines", "fr": "Benzodiaz\u00e9pines" },
+          "emoji": "🔵",
+          "active": true,
+          "availableUnits": ["milligrams", "times"],
+          "defaultUnit": "milligrams",
+          "healthMilestones": [
+            { "durationHours": 48, "title": { "en": "Withdrawal begins", "fr": "Le sevrage commence" }, "description": { "en": "Anxiety and insomnia as GABA adjusts.", "fr": "Anxi\u00e9t\u00e9 et insomnie alors que le GABA s\u2019ajuste." }, "healthPercent": 0.08 },
+            { "durationHours": 168, "title": { "en": "Acute phase peaks", "fr": "La phase aigu\u00eb culmine" }, "description": { "en": "Most intense symptoms — seizure risk highest.", "fr": "Sympt\u00f4mes les plus intenses \u2014 risque de convulsion le plus \u00e9lev\u00e9." }, "healthPercent": 0.15 },
+            { "durationHours": 336, "title": { "en": "Acute symptoms ease", "fr": "Les sympt\u00f4mes aigus s\u2019att\u00e9nuent" }, "description": { "en": "Physical withdrawal symptoms diminishing.", "fr": "Les sympt\u00f4mes physiques de sevrage diminuent." }, "healthPercent": 0.25 },
+            { "durationHours": 720, "title": { "en": "Sleep improving", "fr": "Le sommeil s\u2019am\u00e9liore" }, "description": { "en": "Natural sleep patterns returning.", "fr": "Les sch\u00e9mas de sommeil naturels reviennent." }, "healthPercent": 0.35 },
+            { "durationHours": 2160, "title": { "en": "GABA recovery", "fr": "R\u00e9cup\u00e9ration du GABA" }, "description": { "en": "GABA receptor sensitivity normalizing.", "fr": "La sensibilit\u00e9 des r\u00e9cepteurs GABA se normalise." }, "healthPercent": 0.50 },
+            { "durationHours": 4320, "title": { "en": "Anxiety diminishes", "fr": "L\u2019anxi\u00e9t\u00e9 diminue" }, "description": { "en": "Rebound anxiety largely resolved.", "fr": "L\u2019anxi\u00e9t\u00e9 de rebond est en grande partie r\u00e9solue." }, "healthPercent": 0.65 },
+            { "durationHours": 8760, "title": { "en": "Cognitive recovery", "fr": "R\u00e9cup\u00e9ration cognitive" }, "description": { "en": "Memory and cognitive function restored.", "fr": "La m\u00e9moire et la fonction cognitive sont restaur\u00e9es." }, "healthPercent": 0.85 },
+            { "durationHours": 17520, "title": { "en": "Full neurological healing", "fr": "Gu\u00e9rison neurologique compl\u00e8te" }, "description": { "en": "GABA system fully restored.", "fr": "Le syst\u00e8me GABA enti\u00e8rement restaur\u00e9." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "ketamine",
+          "name": { "en": "Ketamine", "fr": "K\u00e9tamine" },
+          "emoji": "🌀",
+          "active": true,
+          "availableUnits": ["grams", "milligrams", "times"],
+          "defaultUnit": "grams",
+          "healthMilestones": null
+        },
+        {
+          "id": "threeMmc",
+          "name": { "en": "3-MMC", "fr": "3-MMC" },
+          "emoji": "🔷",
+          "active": true,
+          "availableUnits": ["grams", "milligrams", "times"],
+          "defaultUnit": "grams",
+          "healthMilestones": null
+        },
+        {
+          "id": "ghb",
+          "name": { "en": "GHB / GBL", "fr": "GHB / GBL" },
+          "emoji": "💧",
+          "active": true,
+          "availableUnits": ["milliliters", "grams", "times"],
+          "defaultUnit": "milliliters",
+          "healthMilestones": [
+            { "durationHours": 48, "title": { "en": "Acute withdrawal passes", "fr": "Le sevrage aigu passe" }, "description": { "en": "Most dangerous phase passes (seizure risk).", "fr": "La phase la plus dangereuse passe (risque de convulsion)." }, "healthPercent": 0.15 },
+            { "durationHours": 168, "title": { "en": "Sleep improves", "fr": "Le sommeil s\u2019am\u00e9liore" }, "description": { "en": "Sleep patterns begin to normalize.", "fr": "Les sch\u00e9mas de sommeil commencent \u00e0 se normaliser." }, "healthPercent": 0.35 },
+            { "durationHours": 336, "title": { "en": "Anxiety diminishes", "fr": "L\u2019anxi\u00e9t\u00e9 diminue" }, "description": { "en": "Rebound anxiety and insomnia fading.", "fr": "L\u2019anxi\u00e9t\u00e9 de rebond et l\u2019insomnie s\u2019estompent." }, "healthPercent": 0.55 },
+            { "durationHours": 720, "title": { "en": "GABA recovery", "fr": "R\u00e9cup\u00e9ration du GABA" }, "description": { "en": "GABA receptors recovering.", "fr": "Les r\u00e9cepteurs GABA r\u00e9cup\u00e8rent." }, "healthPercent": 0.75 },
+            { "durationHours": 2160, "title": { "en": "Full recovery", "fr": "R\u00e9cup\u00e9ration compl\u00e8te" }, "description": { "en": "Neurological function fully restored.", "fr": "La fonction neurologique enti\u00e8rement restaur\u00e9e." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "crack",
+          "name": { "en": "Crack / Freebase", "fr": "Crack" },
+          "emoji": "🪨",
+          "active": true,
+          "availableUnits": ["grams", "milligrams", "times"],
+          "defaultUnit": "grams",
+          "healthMilestones": [
+            { "durationHours": 24, "title": { "en": "Crash phase begins", "fr": "La phase de crash commence" }, "description": { "en": "Intense fatigue as the body adjusts.", "fr": "Fatigue intense alors que le corps s\u2019ajuste." }, "healthPercent": 0.10 },
+            { "durationHours": 72, "title": { "en": "Dopamine rebalancing", "fr": "R\u00e9\u00e9quilibrage de la dopamine" }, "description": { "en": "Brain begins restoring natural dopamine levels.", "fr": "Le cerveau commence \u00e0 restaurer les niveaux naturels de dopamine." }, "healthPercent": 0.20 },
+            { "durationHours": 168, "title": { "en": "Physical symptoms ease", "fr": "Les sympt\u00f4mes physiques s\u2019att\u00e9nuent" }, "description": { "en": "Body aches and fatigue start to diminish.", "fr": "Les douleurs corporelles et la fatigue commencent \u00e0 diminuer." }, "healthPercent": 0.30 },
+            { "durationHours": 720, "title": { "en": "Mood stabilizes", "fr": "L\u2019humeur se stabilise" }, "description": { "en": "Depression and anxiety begin to lift.", "fr": "La d\u00e9pression et l\u2019anxi\u00e9t\u00e9 commencent \u00e0 se dissiper." }, "healthPercent": 0.45 },
+            { "durationHours": 2160, "title": { "en": "Brain pathways healing", "fr": "Les voies c\u00e9r\u00e9brales gu\u00e9rissent" }, "description": { "en": "Neural reward pathways recovering significantly.", "fr": "Les voies de r\u00e9compense neuronales r\u00e9cup\u00e8rent significativement." }, "healthPercent": 0.65 },
+            { "durationHours": 4320, "title": { "en": "Cardiovascular healing", "fr": "Gu\u00e9rison cardiovasculaire" }, "description": { "en": "Heart and vascular system largely recovered.", "fr": "Le c\u0153ur et le syst\u00e8me vasculaire sont largement r\u00e9cup\u00e9r\u00e9s." }, "healthPercent": 0.85 },
+            { "durationHours": 8760, "title": { "en": "Full neurological recovery", "fr": "R\u00e9cup\u00e9ration neurologique compl\u00e8te" }, "description": { "en": "Brain chemistry and reward system fully restored.", "fr": "La chimie c\u00e9r\u00e9brale et le syst\u00e8me de r\u00e9compense enti\u00e8rement restaur\u00e9s." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "nitrous",
+          "name": { "en": "Nitrous Oxide", "fr": "Protoxyde d'azote" },
+          "emoji": "🎈",
+          "active": true,
+          "availableUnits": ["times"],
+          "defaultUnit": "times",
+          "healthMilestones": null
+        },
+        {
+          "id": "tramadol",
+          "name": { "en": "Tramadol", "fr": "Tramadol" },
+          "emoji": "💊",
+          "active": true,
+          "availableUnits": ["milligrams", "times"],
+          "defaultUnit": "milligrams",
+          "healthMilestones": [
+            { "durationHours": 24, "title": { "en": "Withdrawal starts", "fr": "Le sevrage commence" }, "description": { "en": "Body adjusting to absence of opioids.", "fr": "Le corps s\u2019adapte \u00e0 l\u2019absence d\u2019opio\u00efdes." }, "healthPercent": 0.10 },
+            { "durationHours": 72, "title": { "en": "Peak symptoms pass", "fr": "Le pic des sympt\u00f4mes passe" }, "description": { "en": "Worst withdrawal symptoms begin to fade.", "fr": "Les pires sympt\u00f4mes de sevrage commencent \u00e0 dispara\u00eetre." }, "healthPercent": 0.20 },
+            { "durationHours": 168, "title": { "en": "Physical recovery starts", "fr": "La r\u00e9cup\u00e9ration physique commence" }, "description": { "en": "Body functions normalizing.", "fr": "Les fonctions corporelles se normalisent." }, "healthPercent": 0.35 },
+            { "durationHours": 720, "title": { "en": "Pain sensitivity normalizes", "fr": "La sensibilit\u00e9 \u00e0 la douleur se normalise" }, "description": { "en": "Natural pain response returning.", "fr": "La r\u00e9ponse naturelle \u00e0 la douleur revient." }, "healthPercent": 0.50 },
+            { "durationHours": 2160, "title": { "en": "Endorphin recovery", "fr": "R\u00e9cup\u00e9ration des endorphines" }, "description": { "en": "Natural endorphin production restored.", "fr": "La production naturelle d\u2019endorphines est restaur\u00e9e." }, "healthPercent": 0.70 },
+            { "durationHours": 4320, "title": { "en": "Mood stabilizes", "fr": "L\u2019humeur se stabilise" }, "description": { "en": "Depression and anxiety largely resolved.", "fr": "La d\u00e9pression et l\u2019anxi\u00e9t\u00e9 sont en grande partie r\u00e9solues." }, "healthPercent": 0.85 },
+            { "durationHours": 8760, "title": { "en": "Full recovery", "fr": "R\u00e9cup\u00e9ration compl\u00e8te" }, "description": { "en": "Neurological and physical recovery achieved.", "fr": "R\u00e9cup\u00e9ration neurologique et physique atteinte." }, "healthPercent": 1.0 }
+          ]
+        },
+        {
+          "id": "dmt",
+          "name": { "en": "DMT", "fr": "DMT" },
+          "emoji": "🌌",
+          "active": true,
+          "availableUnits": ["grams", "milligrams", "times"],
+          "defaultUnit": "milligrams",
+          "healthMilestones": null
+        },
+        {
+          "id": "other",
+          "name": { "en": "Other", "fr": "Autre" },
+          "emoji": "🔹",
+          "active": true,
+          "availableUnits": ["grams", "milligrams", "times"],
+          "defaultUnit": "times",
+          "healthMilestones": null
+        }
+      ],
+      "availableUnits": ["grams", "milligrams", "times"],
+      "defaultUnit": "grams",
+      "formConfig": {
+        "hasConsumption": true,
+        "hasTime": false,
+        "hasCost": true
+      },
+      "healthMilestones": null
+    },
+    {
+      "id": "gambling",
+      "name": { "en": "Gambling", "fr": "Jeux d'argent" },
+      "emoji": "🎰",
+      "active": true,
+      "category": "behavioral",
+      "subtypes": null,
+      "availableUnits": ["times", "hours"],
+      "defaultUnit": "times",
+      "formConfig": {
+        "hasConsumption": false,
+        "hasTime": false,
+        "hasCost": true
+      },
+      "healthMilestones": [
+        { "durationHours": 168, "title": { "en": "Urges diminishing", "fr": "Les pulsions diminuent" }, "description": { "en": "Initial strong urges begin to lessen.", "fr": "Les fortes pulsions initiales commencent \u00e0 diminuer." }, "healthPercent": 0.10 },
+        { "durationHours": 720, "title": { "en": "Financial clarity", "fr": "Clart\u00e9 financi\u00e8re" }, "description": { "en": "First full month without financial losses from gambling.", "fr": "Premier mois complet sans pertes financi\u00e8res li\u00e9es au jeu." }, "healthPercent": 0.25 },
+        { "durationHours": 2160, "title": { "en": "Emotional stability", "fr": "Stabilit\u00e9 \u00e9motionnelle" }, "description": { "en": "Mood swings from wins/losses no longer present.", "fr": "Les sautes d\u2019humeur li\u00e9es aux gains/pertes ne sont plus pr\u00e9sentes." }, "healthPercent": 0.45 },
+        { "durationHours": 4320, "title": { "en": "Relationships improving", "fr": "Les relations s\u2019am\u00e9liorent" }, "description": { "en": "Trust rebuilding with loved ones.", "fr": "La confiance se reconstruit avec les proches." }, "healthPercent": 0.65 },
+        { "durationHours": 8760, "title": { "en": "Full behavioral recovery", "fr": "R\u00e9cup\u00e9ration comportementale compl\u00e8te" }, "description": { "en": "Gambling urges rare, healthy coping established.", "fr": "Les pulsions de jeu sont rares, des m\u00e9canismes d\u2019adaptation sains sont \u00e9tablis." }, "healthPercent": 0.85 },
+        { "durationHours": 17520, "title": { "en": "Long-term recovery", "fr": "R\u00e9cup\u00e9ration \u00e0 long terme" }, "description": { "en": "Sustained recovery with strong foundation.", "fr": "R\u00e9cup\u00e9ration durable avec des bases solides." }, "healthPercent": 1.0 }
+      ]
+    },
+    {
+      "id": "gaming",
+      "name": { "en": "Video Games", "fr": "Jeux vid\u00e9o" },
+      "emoji": "🎮",
+      "active": true,
+      "category": "behavioral",
+      "subtypes": null,
+      "availableUnits": ["hours", "minutes"],
+      "defaultUnit": "hours",
+      "formConfig": {
+        "hasConsumption": true,
+        "hasTime": true,
+        "hasCost": false
+      },
+      "healthMilestones": null
+    },
+    {
+      "id": "socialMedia",
+      "name": { "en": "Social Media", "fr": "R\u00e9seaux sociaux" },
+      "emoji": "📱",
+      "active": true,
+      "category": "behavioral",
+      "subtypes": null,
+      "availableUnits": ["hours", "minutes"],
+      "defaultUnit": "hours",
+      "formConfig": {
+        "hasConsumption": true,
+        "hasTime": true,
+        "hasCost": false
+      },
+      "healthMilestones": null
+    },
+    {
+      "id": "pornography",
+      "name": { "en": "Pornography", "fr": "Pornographie" },
+      "emoji": "🔞",
+      "active": true,
+      "category": "behavioral",
+      "subtypes": null,
+      "availableUnits": ["times", "hours"],
+      "defaultUnit": "times",
+      "formConfig": {
+        "hasConsumption": true,
+        "hasTime": true,
+        "hasCost": false
+      },
+      "healthMilestones": null
+    },
+    {
+      "id": "food",
+      "name": { "en": "Food", "fr": "Alimentation" },
+      "emoji": "🍔",
+      "active": true,
+      "category": "behavioral",
+      "subtypes": null,
+      "availableUnits": ["portions", "times"],
+      "defaultUnit": "portions",
+      "formConfig": {
+        "hasConsumption": true,
+        "hasTime": false,
+        "hasCost": false
+      },
+      "healthMilestones": [
+        { "durationHours": 24, "title": { "en": "Blood sugar stabilizes", "fr": "La glyc\u00e9mie se stabilise" }, "description": { "en": "Blood sugar levels begin to normalize.", "fr": "Les taux de glyc\u00e9mie commencent \u00e0 se normaliser." }, "healthPercent": 0.10 },
+        { "durationHours": 168, "title": { "en": "Cravings diminish", "fr": "Les envies diminuent" }, "description": { "en": "Food cravings start to lessen.", "fr": "Les envies alimentaires commencent \u00e0 diminuer." }, "healthPercent": 0.25 },
+        { "durationHours": 336, "title": { "en": "Digestion improves", "fr": "La digestion s\u2019am\u00e9liore" }, "description": { "en": "Digestive system functioning better.", "fr": "Le syst\u00e8me digestif fonctionne mieux." }, "healthPercent": 0.40 },
+        { "durationHours": 720, "title": { "en": "Energy levels rise", "fr": "Les niveaux d\u2019\u00e9nergie augmentent" }, "description": { "en": "Consistent energy throughout the day.", "fr": "\u00c9nergie constante tout au long de la journ\u00e9e." }, "healthPercent": 0.60 },
+        { "durationHours": 2160, "title": { "en": "Relationship with food heals", "fr": "La relation \u00e0 la nourriture gu\u00e9rit" }, "description": { "en": "Healthy eating patterns established.", "fr": "Des habitudes alimentaires saines sont \u00e9tablies." }, "healthPercent": 0.80 },
+        { "durationHours": 4320, "title": { "en": "Full recovery", "fr": "R\u00e9cup\u00e9ration compl\u00e8te" }, "description": { "en": "Sustained healthy relationship with food.", "fr": "Relation saine et durable avec la nourriture." }, "healthPercent": 1.0 }
+      ]
+    },
+    {
+      "id": "shopping",
+      "name": { "en": "Shopping", "fr": "Achats compulsifs" },
+      "emoji": "🛍️",
+      "active": true,
+      "category": "behavioral",
+      "subtypes": null,
+      "availableUnits": ["times", "hours"],
+      "defaultUnit": "times",
+      "formConfig": {
+        "hasConsumption": false,
+        "hasTime": false,
+        "hasCost": true
+      },
+      "healthMilestones": null
+    },
+    {
+      "id": "caffeine",
+      "name": { "en": "Caffeine", "fr": "Caf\u00e9ine" },
+      "emoji": "☕",
+      "active": true,
+      "category": "substance",
+      "subtypes": null,
+      "availableUnits": ["drinks", "milligrams"],
+      "defaultUnit": "drinks",
+      "formConfig": {
+        "hasConsumption": true,
+        "hasTime": false,
+        "hasCost": true
+      },
+      "healthMilestones": [
+        { "durationHours": 12, "title": { "en": "Withdrawal begins", "fr": "Le sevrage commence" }, "description": { "en": "Headaches and fatigue as caffeine leaves the body.", "fr": "Maux de t\u00eate et fatigue alors que la caf\u00e9ine quitte le corps." }, "healthPercent": 0.15 },
+        { "durationHours": 24, "title": { "en": "Peak withdrawal", "fr": "Pic du sevrage" }, "description": { "en": "Strongest withdrawal symptoms — this too shall pass.", "fr": "Sympt\u00f4mes de sevrage les plus forts \u2014 \u00e7a va passer aussi." }, "healthPercent": 0.25 },
+        { "durationHours": 72, "title": { "en": "Symptoms fading", "fr": "Les sympt\u00f4mes s\u2019estompent" }, "description": { "en": "Headaches diminishing, energy returning naturally.", "fr": "Les maux de t\u00eate diminuent, l\u2019\u00e9nergie revient naturellement." }, "healthPercent": 0.40 },
+        { "durationHours": 168, "title": { "en": "Sleep improves", "fr": "Le sommeil s\u2019am\u00e9liore" }, "description": { "en": "Deeper, more restful sleep.", "fr": "Sommeil plus profond et plus r\u00e9parateur." }, "healthPercent": 0.60 },
+        { "durationHours": 336, "title": { "en": "Anxiety decreases", "fr": "L\u2019anxi\u00e9t\u00e9 diminue" }, "description": { "en": "Lower anxiety levels, calmer throughout the day.", "fr": "Niveaux d\u2019anxi\u00e9t\u00e9 plus bas, plus calme tout au long de la journ\u00e9e." }, "healthPercent": 0.80 },
+        { "durationHours": 720, "title": { "en": "Full recovery", "fr": "R\u00e9cup\u00e9ration compl\u00e8te" }, "description": { "en": "Natural energy levels fully restored.", "fr": "Niveaux d\u2019\u00e9nergie naturels enti\u00e8rement restaur\u00e9s." }, "healthPercent": 1.0 }
+      ]
+    },
+    {
+      "id": "chemsex",
+      "name": { "en": "Chemsex", "fr": "Chemsex" },
+      "emoji": "🧪",
+      "active": true,
+      "category": "behavioral",
+      "subtypes": null,
+      "availableUnits": ["times", "hours"],
+      "defaultUnit": "times",
+      "formConfig": {
+        "hasConsumption": true,
+        "hasTime": false,
+        "hasCost": true
+      },
+      "healthMilestones": null
+    },
+    {
+      "id": "other",
+      "name": { "en": "Other", "fr": "Autre" },
+      "emoji": "🔹",
+      "active": true,
+      "category": "other",
+      "subtypes": null,
+      "availableUnits": ["times", "hours", "grams", "milliliters", "other"],
+      "defaultUnit": "times",
+      "formConfig": {
+        "hasConsumption": false,
+        "hasTime": false,
+        "hasCost": true
+      },
+      "healthMilestones": null
+    }
+  ],
+  "units": [
+    { "id": "grams", "name": { "en": "grams", "fr": "grammes" }, "abbreviation": { "en": "g", "fr": "g" } },
+    { "id": "milligrams", "name": { "en": "milligrams", "fr": "milligrammes" }, "abbreviation": { "en": "mg", "fr": "mg" } },
+    { "id": "liters", "name": { "en": "liters", "fr": "litres" }, "abbreviation": { "en": "L", "fr": "L" } },
+    { "id": "milliliters", "name": { "en": "milliliters", "fr": "millilitres" }, "abbreviation": { "en": "mL", "fr": "mL" } },
+    { "id": "cigarettes", "name": { "en": "cigarettes", "fr": "cigarettes" }, "abbreviation": { "en": "cig", "fr": "cig" } },
+    { "id": "joints", "name": { "en": "joints", "fr": "joints" }, "abbreviation": { "en": "j", "fr": "j" } },
+    { "id": "drinks", "name": { "en": "drinks", "fr": "verres" }, "abbreviation": { "en": "drinks", "fr": "verres" } },
+    { "id": "times", "name": { "en": "times", "fr": "fois" }, "abbreviation": { "en": "x", "fr": "x" } },
+    { "id": "hours", "name": { "en": "hours", "fr": "heures" }, "abbreviation": { "en": "h", "fr": "h" } },
+    { "id": "minutes", "name": { "en": "minutes", "fr": "minutes" }, "abbreviation": { "en": "min", "fr": "min" } },
+    { "id": "portions", "name": { "en": "portions", "fr": "portions" }, "abbreviation": { "en": "port", "fr": "port" } },
+    { "id": "other", "name": { "en": "units", "fr": "unit\u00e9s" }, "abbreviation": { "en": "u", "fr": "u" } }
+  ],
+  "frequencies": [
+    { "id": "daily", "name": { "en": "Per day", "fr": "Par jour" }, "shortName": { "en": "Daily", "fr": "Quotidien" }, "multiplier": 1 },
+    { "id": "weekly", "name": { "en": "Per week", "fr": "Par semaine" }, "shortName": { "en": "Weekly", "fr": "Hebdo" }, "multiplier": 7 },
+    { "id": "monthly", "name": { "en": "Per month", "fr": "Par mois" }, "shortName": { "en": "Monthly", "fr": "Mensuel" }, "multiplier": 30 }
+  ]
+}
