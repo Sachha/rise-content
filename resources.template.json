@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "resources": [
+    {
+      "id": "fr_example_generic",
+      "name": {
+        "en": "Resource Name in English",
+        "fr": "Nom de la ressource en français"
+      },
+      "description": {
+        "en": "Short description of what this resource offers.",
+        "fr": "Description courte de ce que cette ressource propose."
+      },
+      "phone": "01 23 45 67 89",
+      "website": "https://www.example.com",
+      "donateUrl": "https://www.example.com/don",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/example",
+        "twitter": "https://twitter.com/example",
+        "instagram": "https://www.instagram.com/example",
+        "linkedin": "https://www.linkedin.com/company/example"
+      },
+      "countryCode": "FR",
+      "targetAddictions": [],
+      "isEmergency": true,
+      "schedule": "24h/24, 7j/7"
+    },
+    {
+      "id": "fr_example_specialized",
+      "name": {
+        "en": "Specialized Resource Name",
+        "fr": "Nom de la ressource spécialisée"
+      },
+      "description": {
+        "en": "Specialized help for specific addictions.",
+        "fr": "Aide spécialisée pour des addictions spécifiques."
+      },
+      "phone": "0 800 00 00 00",
+      "website": "https://www.example-specialized.com",
+      "donateUrl": null,
+      "socialLinks": null,
+      "countryCode": "FR",
+      "targetAddictions": ["alcohol", "drugs"],
+      "isEmergency": false,
+      "schedule": "9h-18h, lun-ven"
+    },
+    {
+      "id": "be_example",
+      "name": {
+        "en": "Belgian Resource Example",
+        "fr": "Exemple de ressource belge"
+      },
+      "description": {
+        "en": "Example for another country.",
+        "fr": "Exemple pour un autre pays."
+      },
+      "phone": "+32 2 123 45 67",
+      "website": "https://www.example.be",
+      "donateUrl": null,
+      "socialLinks": null,
+      "countryCode": "BE",
+      "targetAddictions": [],
+      "isEmergency": false,
+      "schedule": null
+    }
+  ]
+}
