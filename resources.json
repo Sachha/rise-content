@@ -1,5 +1,74 @@
 {
-  "version": 1,
+  "version": 2,
+  "resources": [
+    {
+      "id": "fr_example_generic",
+      "name": {
+        "en": "Resource Name in English",
+        "fr": "Nom de la ressource en français"
+      },
+      "description": {
+        "en": "Short description of what this resource offers.",
+        "fr": "Description courte de ce que cette ressource propose."
+      },
+      "phone": "01 23 45 67 89",
+      "website": "https://www.example.com",
+      "donateUrl": "https://www.example.com/don",
+      "socialLinks": {
+        "facebook": "https://www.facebook.com/example",
+        "twitter": "https://twitter.com/example",
+        "instagram": "https://www.instagram.com/example",
+        "linkedin": "https://www.linkedin.com/company/example"
+      },
+      "countryCode": "FR",
+      "targetAddictions": [],
+      "isEmergency": true,
+      "schedule": "24h/24, 7j/7"
+    },
+    {
+      "id": "fr_example_specialized",
+      "name": {
+        "en": "Specialized Resource Name",
+        "fr": "Nom de la ressource spécialisée"
+      },
+      "description": {
+        "en": "Specialized help for specific addictions.",
+        "fr": "Aide spécialisée pour des addictions spécifiques."
+      },
+      "phone": "0 800 00 00 00",
+      "website": "https://www.example-specialized.com",
+      "donateUrl": null,
+      "socialLinks": null,
+      "countryCode": "FR",
+      "targetAddictions": ["alcohol", "drugs"],
+      "isEmergency": false,
+      "schedule": "9h-18h, lun-ven"
+    },
+    {
+      "id": "be_example",
+      "name": {
+        "en": "Belgian Resource Example",
+        "fr": "Exemple de ressource belge"
+      },
+      "description": {
+        "en": "Example for another country.",
+        "fr": "Exemple pour un autre pays."
+      },
+      "phone": "+32 2 123 45 67",
+      "website": "https://www.example.be",
+      "donateUrl": null,
+      "socialLinks": null,
+      "countryCode": "BE",
+      "targetAddictions": [],
+      "isEmergency": false,
+      "schedule": null
+    }
+  ]
+}
+
+
+{
+  "version": 2,
   "resources": [
     {
       "id": "fr_3114",
@@ -99,6 +168,107 @@
       "targetAddictions": ["socialMedia", "gaming"],
       "isEmergency": false,
       "schedule": "9h-23h, 7j/7"
+    },
+    {
+      "id": "fr_ecoute_cannabis",
+      "name": { "en": "Écoute Cannabis", "fr": "Écoute Cannabis" },
+      "description": { "en": "Listening and support for cannabis users and their relatives. Anonymous and free.", "fr": "Écoute et soutien pour les consommateurs de cannabis et leur entourage. Anonyme et gratuit." },
+      "phone": "0 980 980 940",
+      "website": "https://www.drogues-info-service.fr",
+      "countryCode": "FR",
+      "targetAddictions": ["cannabis"],
+      "isEmergency": false,
+      "schedule": "8h-2h, 7j/7"
+    },
+    {
+      "id": "fr_alcooliques_anonymes",
+      "name": { "en": "Alcooliques Anonymes France", "fr": "Alcooliques Anonymes France" },
+      "description": { "en": "Mutual aid fellowship for people with alcohol problems. Anonymous meetings and phone support 24/7.", "fr": "Fraternité d'entraide pour les personnes ayant un problème d'alcool. Réunions anonymes et permanence téléphonique 24h/24." },
+      "phone": "09 69 39 40 20",
+      "website": "https://alcooliques-anonymes.fr",
+      "countryCode": "FR",
+      "targetAddictions": ["alcohol"],
+      "isEmergency": false,
+      "schedule": "24h/24, 7j/7"
+    },
+    {
+      "id": "fr_narcotiques_anonymes",
+      "name": { "en": "Narcotiques Anonymes France", "fr": "Narcotiques Anonymes France" },
+      "description": { "en": "Mutual aid fellowship for people recovering from drug addiction. Meetings and helpline.", "fr": "Fraternité d'entraide pour les personnes se rétablissant d'une addiction aux drogues. Réunions et ligne d'écoute." },
+      "phone": "01 43 72 12 72",
+      "website": "https://www.narcotiquesanonymes.org",
+      "countryCode": "FR",
+      "targetAddictions": ["drugs"],
+      "isEmergency": false,
+      "schedule": "9h-22h, 7j/7"
+    },
+    {
+      "id": "fr_croix_bleue",
+      "name": { "en": "La Croix Bleue", "fr": "La Croix Bleue" },
+      "description": { "en": "Support association for people struggling with alcohol and other addictions. Peer support groups.", "fr": "Association d'entraide pour les personnes en difficulté avec l'alcool et autres addictions. Groupes de parole." },
+      "phone": "01 42 28 37 37",
+      "website": "https://www.croixbleue.fr",
+      "countryCode": "FR",
+      "targetAddictions": ["alcohol", "drugs"],
+      "isEmergency": false
+    },
+    {
+      "id": "fr_dasa",
+      "name": { "en": "DASA — Sex & Love Addicts Anonymous France", "fr": "DASA — Dépendants Affectifs et Sexuels Anonymes" },
+      "description": { "en": "12-step fellowship for people recovering from sex and love addiction. Free meetings in person and online.", "fr": "Fraternité en 12 étapes pour les personnes se rétablissant d'une dépendance affective et/ou sexuelle. Réunions gratuites en présentiel et en ligne." },
+      "website": "https://dasafrance.fr",
+      "countryCode": "FR",
+      "targetAddictions": ["sex", "porn"],
+      "isEmergency": false
+    },
+    {
+      "id": "fr_chemsex_aides",
+      "name": { "en": "Info Chemsex (AIDES)", "fr": "Info Chemsex (AIDES)" },
+      "description": { "en": "Listening and emergency support for chemsex users and their relatives. WhatsApp/Signal contact.", "fr": "Écoute et soutien d'urgence pour les pratiquants du chemsex et leur entourage. Contact par WhatsApp/Signal." },
+      "phone": "07 62 93 22 29",
+      "website": "https://www.aides.org/chemsex",
+      "countryCode": "FR",
+      "targetAddictions": ["chemsex", "drugs"],
+      "isEmergency": false,
+      "schedule": "lun-ven (réponse dans la journée)"
+    },
+    {
+      "id": "fr_chems_pause",
+      "name": {
+        "en": "Chems Pause",
+        "fr": "Chems Pause"
+      },
+      "description": {
+        "en": "Prevention and harm reduction association for chemsex. Weekly support groups, wellness workshops and social activities in Paris. Open to all genders and orientations.",
+        "fr": "Association de prévention et réduction des risques liés au chemsex. Groupes de parole hebdomadaires, ateliers bien-être et activités sociales à Paris. Ouvert à tous les genres et orientations."
+      },
+      "website": "https://chemspause.fr",
+      "donateUrl": "https://www.helloasso.com/associations/chems-pause",
+      "countryCode": "FR",
+      "targetAddictions": [
+        "chemsex",
+        "drugs"
+      ],
+      "isEmergency": false
+    }
+    {
+      "id": "fr_addictions_france",
+      "name": { "en": "Association Addictions France", "fr": "Association Addictions France" },
+      "description": { "en": "National association for prevention, care and harm reduction for all addictions (with or without substance). Manages 113 CSAPA centers across France.", "fr": "Association nationale de prévention, de soins et de réduction des risques pour toutes les addictions (avec ou sans substance). Gère 113 centres CSAPA en France." },
+      "phone": "01 42 33 51 04",
+      "website": "https://addictions-france.org",
+      "countryCode": "FR",
+      "targetAddictions": ["alcohol", "tobacco", "cannabis", "drugs", "gambling", "food", "gaming", "sex", "shopping"],
+      "isEmergency": false
+    },
+    {
+      "id": "fr_cefraap",
+      "name": { "en": "CEFRAAP — Francophone Center for Pornography Addiction Resources", "fr": "CEFRAAP — Centre Francophone de Ressources et d'Accompagnement de l'Addiction à la Pornographie" },
+      "description": { "en": "Support groups, individual counseling and training for pornography addiction.", "fr": "Groupes de parole, accompagnement individuel et formations sur l'addiction à la pornographie." },
+      "website": "https://cefraap.com",
+      "countryCode": "FR",
+      "targetAddictions": ["pornography", "sex"],
+      "isEmergency": false
     }
   ]
 }
