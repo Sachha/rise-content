@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "resources": [
     {
       "id": "fr_3114",
@@ -130,7 +130,7 @@
       "website": "https://www.drogues-info-service.fr",
       "socialLinks": {},
       "countryCode": "FR",
-      "targetAddictions": ["cannabis"],
+      "targetAddictions": ["drugs"],
       "isEmergency": false,
       "schedule": "8h-2h, 7j/7"
     },
@@ -179,7 +179,7 @@
       "website": "https://dasafrance.fr",
       "socialLinks": {},
       "countryCode": "FR",
-      "targetAddictions": ["sex", "loveAddiction"],
+      "targetAddictions": ["other"],
       "isEmergency": false
     },
     {
@@ -211,7 +211,7 @@
         "linkedin": "https://fr.linkedin.com/company/association-addictions-france"
       },
       "countryCode": "FR",
-      "targetAddictions": ["alcohol", "tobacco", "cannabis", "drugs", "gambling", "food", "gaming", "sex", "shopping"],
+      "targetAddictions": ["alcohol", "tobacco", "drugs", "gambling", "food", "gaming", "pornography", "shopping"],
       "isEmergency": false
     },
     {
@@ -223,7 +223,7 @@
         "instagram": "https://www.instagram.com/cefraap"
       },
       "countryCode": "FR",
-      "targetAddictions": ["pornography", "sex"],
+      "targetAddictions": ["pornography"],
       "isEmergency": false
     },
     {
