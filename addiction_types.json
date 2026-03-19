@@ -1,20 +1,5 @@
 {
-  "version": 3,
-  "changelog": [
-    "Added 'vaping' addiction type (major gap - huge user base)",
-    "Added 'nicotinePouches' addiction type (trending: snus, Zyn, etc.)",
-    "Added 'sugar' addiction type (distinct from general food addiction)",
-    "Added healthMilestones for: gaming, socialMedia, pornography, shopping, chemsex",
-    "Added healthMilestones for drug subtypes: ketamine, 3-MMC, nitrous oxide",
-    "Tobacco: added missing WHO milestones (2-12 weeks circulation, 1-9 months coughing, 5 years mouth/throat cancer)",
-    "Tobacco: fixed 0.33h → 0.34h for accuracy (20 min = 0.333h)",
-    "Alcohol: refined 72h milestone description (medical accuracy)",
-    "Cannabis: added 2-week peak withdrawal milestone, adjusted timeline per DSM-5 research",
-    "All milestones cross-referenced with WHO, CDC, ACS, ALA, PMC sources",
-    "Added LSD/mushrooms/DMT note: healthMilestones null is intentional (no physiological dependence)",
-    "Fixed formConfig inconsistencies",
-    "Added 'puffs' unit for vaping"
-  ],
+  "version": 4,
   "addictionTypes": [
     {
       "id": "alcohol",
@@ -529,8 +514,8 @@
         {
           "id": "opioids",
           "name": {
-            "en": "Opioids (prescription)",
-            "fr": "Opioïdes (prescription)"
+            "en": "Opioids",
+            "fr": "Opioïdes"
           },
           "emoji": "💊",
           "active": true,
