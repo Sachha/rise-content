@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "addictionTypes": [
     {
       "id": "alcohol",
@@ -2913,6 +2913,10 @@
         "en": "grams",
         "fr": "grammes"
       },
+      "singularName": {
+        "en": "gram",
+        "fr": "gramme"
+      },
       "abbreviation": {
         "en": "g",
         "fr": "g"
@@ -2923,6 +2927,10 @@
       "name": {
         "en": "milligrams",
         "fr": "milligrammes"
+      },
+      "singularName": {
+        "en": "milligram",
+        "fr": "milligramme"
       },
       "abbreviation": {
         "en": "mg",
@@ -2935,6 +2943,10 @@
         "en": "liters",
         "fr": "litres"
       },
+      "singularName": {
+        "en": "liter",
+        "fr": "litre"
+      },
       "abbreviation": {
         "en": "L",
         "fr": "L"
@@ -2945,6 +2957,10 @@
       "name": {
         "en": "milliliters",
         "fr": "millilitres"
+      },
+      "singularName": {
+        "en": "milliliter",
+        "fr": "millilitre"
       },
       "abbreviation": {
         "en": "mL",
@@ -2957,6 +2973,10 @@
         "en": "cigarettes",
         "fr": "cigarettes"
       },
+      "singularName": {
+        "en": "cigarette",
+        "fr": "cigarette"
+      },
       "abbreviation": {
         "en": "cig",
         "fr": "cig"
@@ -2967,6 +2987,10 @@
       "name": {
         "en": "joints",
         "fr": "joints"
+      },
+      "singularName": {
+        "en": "joint",
+        "fr": "joint"
       },
       "abbreviation": {
         "en": "j",
@@ -2979,6 +3003,10 @@
         "en": "drinks",
         "fr": "verres"
       },
+      "singularName": {
+        "en": "drink",
+        "fr": "verre"
+      },
       "abbreviation": {
         "en": "drinks",
         "fr": "verres"
@@ -2990,6 +3018,10 @@
         "en": "puffs",
         "fr": "bouffées"
       },
+      "singularName": {
+        "en": "puff",
+        "fr": "bouffée"
+      },
       "abbreviation": {
         "en": "puffs",
         "fr": "bouff."
@@ -2999,6 +3031,10 @@
       "id": "times",
       "name": {
         "en": "times",
+        "fr": "fois"
+      },
+      "singularName": {
+        "en": "time",
         "fr": "fois"
       },
       "abbreviation": {
@@ -3012,6 +3048,10 @@
         "en": "hours",
         "fr": "heures"
       },
+      "singularName": {
+        "en": "hour",
+        "fr": "heure"
+      },
       "abbreviation": {
         "en": "h",
         "fr": "h"
@@ -3022,6 +3062,10 @@
       "name": {
         "en": "minutes",
         "fr": "minutes"
+      },
+      "singularName": {
+        "en": "minute",
+        "fr": "minute"
       },
       "abbreviation": {
         "en": "min",
@@ -3034,6 +3078,10 @@
         "en": "portions",
         "fr": "portions"
       },
+      "singularName": {
+        "en": "portion",
+        "fr": "portion"
+      },
       "abbreviation": {
         "en": "port",
         "fr": "port"
@@ -3044,6 +3092,10 @@
       "name": {
         "en": "units",
         "fr": "unités"
+      },
+      "singularName": {
+        "en": "unit",
+        "fr": "unité"
       },
       "abbreviation": {
         "en": "u",
