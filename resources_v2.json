@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "schemaVersion": 2,
   "fallbackDirectoryUrl": "https://findahelpline.com",
   "countries": [
@@ -504,7 +504,7 @@
       "priority": 100,
       "hours": {
         "en": "24/7",
-        "fr": "24 h/24, 7 j/7"
+        "fr": "24 h/24, 7 j/7"
       },
       "is24h": true,
       "free": true,
@@ -542,7 +542,7 @@
       "priority": 90,
       "hours": {
         "en": "24/7",
-        "fr": "24 h/24, 7 j/7"
+        "fr": "24 h/24, 7 j/7"
       },
       "is24h": true,
       "free": false,
@@ -578,8 +578,8 @@
       "isEmergency": false,
       "priority": 50,
       "hours": {
-        "en": "9 am-11 pm, 7 days a week",
-        "fr": "9 h-23 h, 7 j/7"
+        "en": "9 am-11 pm, 7 days a week",
+        "fr": "9 h-23 h, 7 j/7"
       },
       "free": true,
       "languages": [
@@ -611,8 +611,8 @@
       "isEmergency": false,
       "priority": 60,
       "hours": {
-        "en": "8 am-11 pm, 7 days a week",
-        "fr": "8 h-23 h, 7 j/7"
+        "en": "8 am-11 pm, 7 days a week",
+        "fr": "8 h-23 h, 7 j/7"
       },
       "free": true,
       "languages": [
@@ -644,8 +644,8 @@
       "isEmergency": false,
       "priority": 60,
       "hours": {
-        "en": "8 am-11 pm, 7 days a week",
-        "fr": "8 h-23 h, 7 j/7"
+        "en": "8 am-11 pm, 7 days a week",
+        "fr": "8 h-23 h, 7 j/7"
       },
       "free": false,
       "languages": [
@@ -676,8 +676,8 @@
       "isEmergency": false,
       "priority": 60,
       "hours": {
-        "en": "8 am-8 pm, Monday to Saturday",
-        "fr": "8 h-20 h, du lundi au samedi"
+        "en": "8 am-8 pm, Monday to Saturday",
+        "fr": "8 h-20 h, du lundi au samedi"
       },
       "free": false,
       "languages": [
@@ -709,8 +709,8 @@
       "isEmergency": false,
       "priority": 60,
       "hours": {
-        "en": "8 am-11 pm, 7 days a week",
-        "fr": "8 h-23 h, 7 j/7"
+        "en": "8 am-11 pm, 7 days a week",
+        "fr": "8 h-23 h, 7 j/7"
       },
       "free": false,
       "languages": [
@@ -741,8 +741,8 @@
       "isEmergency": false,
       "priority": 40,
       "hours": {
-        "en": "4-6 pm, Monday, Tuesday, Thursday and Friday (except public holidays)",
-        "fr": "16 h-18 h, lundi, mardi, jeudi et vendredi (hors jours fériés)"
+        "en": "4-6 pm, Monday, Tuesday, Thursday and Friday (except public holidays)",
+        "fr": "16 h-18 h, lundi, mardi, jeudi et vendredi (hors jours fériés)"
       },
       "free": false,
       "languages": [
@@ -778,8 +778,8 @@
       "isEmergency": false,
       "priority": 40,
       "hours": {
-        "en": "9 am-11 pm, 7 days a week",
-        "fr": "9 h-23 h, 7 j/7"
+        "en": "9 am-11 pm, 7 days a week",
+        "fr": "9 h-23 h, 7 j/7"
       },
       "free": true,
       "languages": [
@@ -810,8 +810,8 @@
       "isEmergency": false,
       "priority": 40,
       "hours": {
-        "en": "8 am-11 pm, 7 days a week",
-        "fr": "8 h-23 h, 7 j/7"
+        "en": "8 am-11 pm, 7 days a week",
+        "fr": "8 h-23 h, 7 j/7"
       },
       "free": false,
       "languages": [
@@ -843,7 +843,7 @@
       "priority": 30,
       "hours": {
         "en": "24/7",
-        "fr": "24 h/24, 7 j/7"
+        "fr": "24 h/24, 7 j/7"
       },
       "is24h": true,
       "free": false,
@@ -879,8 +879,8 @@
       "isEmergency": false,
       "priority": 30,
       "hours": {
-        "en": "9 am-10 pm, 7 days a week",
-        "fr": "9 h-22 h, 7 j/7"
+        "en": "9 am-10 pm, 7 days a week",
+        "fr": "9 h-22 h, 7 j/7"
       },
       "free": false,
       "languages": [
@@ -911,8 +911,8 @@
       "isEmergency": false,
       "priority": 30,
       "hours": {
-        "en": "9 am-4:30 pm, Tuesday to Thursday",
-        "fr": "9 h-16 h 30, du mardi au jeudi"
+        "en": "9 am-4:30 pm, Tuesday to Thursday",
+        "fr": "9 h-16 h 30, du mardi au jeudi"
       },
       "free": false,
       "languages": [
@@ -1006,8 +1006,8 @@
       "isEmergency": false,
       "priority": 50,
       "hours": {
-        "en": "9 am-5 pm, Monday to Friday",
-        "fr": "9 h-17 h, du lundi au vendredi"
+        "en": "9 am-5 pm, Monday to Friday",
+        "fr": "9 h-17 h, du lundi au vendredi"
       },
       "free": false,
       "languages": [
