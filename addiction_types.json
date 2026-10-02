@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "addictionTypes": [
     {
       "id": "alcohol",
@@ -22,6 +22,8 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "quit",
+      "withdrawalWarning": true,
       "healthMilestones": [
         {
           "durationHours": 12,
@@ -153,6 +155,7 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "quit",
       "healthMilestones": [
         {
           "durationHours": 0.34,
@@ -946,6 +949,7 @@
           },
           "emoji": "🔵",
           "active": true,
+          "withdrawalWarning": true,
           "availableUnits": [
             "milligrams",
             "times"
@@ -1514,6 +1518,7 @@
           },
           "emoji": "💧",
           "active": true,
+          "withdrawalWarning": true,
           "availableUnits": [
             "milliliters",
             "grams",
@@ -1723,6 +1728,7 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "quit",
       "healthMilestones": null
     },
     {
@@ -1746,6 +1752,7 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "quit",
       "healthMilestones": [
         {
           "durationHours": 0.34,
@@ -1901,6 +1908,7 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "quit",
       "healthMilestones": [
         {
           "durationHours": 168,
@@ -1996,6 +2004,7 @@
         "hasTime": true,
         "hasCost": false
       },
+      "recommendedGoal": "quit",
       "healthMilestones": [
         {
           "durationHours": 72,
@@ -2103,6 +2112,7 @@
         "hasTime": true,
         "hasCost": false
       },
+      "recommendedGoal": "reduce",
       "healthMilestones": [
         {
           "durationHours": 24,
@@ -2210,6 +2220,7 @@
         "hasTime": true,
         "hasCost": false
       },
+      "recommendedGoal": "quit",
       "healthMilestones": [
         {
           "durationHours": 72,
@@ -2300,8 +2311,8 @@
     {
       "id": "food",
       "name": {
-        "en": "Food",
-        "fr": "Alimentation"
+        "en": "Compulsive eating",
+        "fr": "Compulsions alimentaires"
       },
       "emoji": "🍔",
       "active": true,
@@ -2317,6 +2328,7 @@
         "hasTime": false,
         "hasCost": false
       },
+      "recommendedGoal": "reduce",
       "healthMilestones": [
         {
           "durationHours": 24,
@@ -2413,6 +2425,7 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "reduce",
       "healthMilestones": [
         {
           "durationHours": 24,
@@ -2520,6 +2533,7 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "reduce",
       "healthMilestones": [
         {
           "durationHours": 12,
@@ -2615,6 +2629,7 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "quit",
       "healthMilestones": [
         {
           "durationHours": 168,
@@ -2698,6 +2713,7 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "quit",
       "healthMilestones": [
         {
           "durationHours": 24,
@@ -2805,6 +2821,7 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "quit",
       "healthMilestones": [
         {
           "durationHours": 72,
@@ -2903,6 +2920,7 @@
         "hasTime": false,
         "hasCost": true
       },
+      "recommendedGoal": "quit",
       "healthMilestones": null
     }
   ],
@@ -2920,7 +2938,8 @@
       "abbreviation": {
         "en": "g",
         "fr": "g"
-      }
+      },
+      "step": 0.5
     },
     {
       "id": "milligrams",
@@ -2950,7 +2969,8 @@
       "abbreviation": {
         "en": "L",
         "fr": "L"
-      }
+      },
+      "step": 0.25
     },
     {
       "id": "milliliters",
@@ -2965,7 +2985,8 @@
       "abbreviation": {
         "en": "mL",
         "fr": "mL"
-      }
+      },
+      "step": 50
     },
     {
       "id": "cigarettes",
@@ -3055,7 +3076,8 @@
       "abbreviation": {
         "en": "h",
         "fr": "h"
-      }
+      },
+      "step": 0.25
     },
     {
       "id": "minutes",
@@ -3070,7 +3092,8 @@
       "abbreviation": {
         "en": "min",
         "fr": "min"
-      }
+      },
+      "step": 15
     },
     {
       "id": "portions",
