@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "resources": [
     {
       "id": "fr_3114",
@@ -85,7 +85,7 @@
         "drugs"
       ],
       "isEmergency": false,
-      "schedule": "8h-2h, 7j/7"
+      "schedule": "8h-23h, 7j/7"
     },
     {
       "id": "fr_alcool_info",
@@ -105,7 +105,7 @@
         "alcohol"
       ],
       "isEmergency": false,
-      "schedule": "8h-2h, 7j/7"
+      "schedule": "8h-23h, 7j/7"
     },
     {
       "id": "fr_tabac_info",
@@ -145,7 +145,7 @@
         "gambling"
       ],
       "isEmergency": false,
-      "schedule": "8h-2h, 7j/7"
+      "schedule": "8h-23h, 7j/7"
     },
     {
       "id": "fr_anorexie",
@@ -206,8 +206,7 @@
       "targetAddictions": [
         "drugs"
       ],
-      "isEmergency": false,
-      "schedule": "8h-2h, 7j/7"
+      "isEmergency": false
     },
     {
       "id": "fr_alcooliques_anonymes",
