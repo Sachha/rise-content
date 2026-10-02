@@ -1,5 +1,25 @@
 {
-  "version": 8,
+  "version": 1,
+  "schemaVersion": 2,
+  "fallbackDirectoryUrl": "https://findahelpline.com",
+  "countries": [
+    {
+      "code": "FR",
+      "name": {
+        "en": "France",
+        "fr": "France"
+      },
+      "emergencyNumber": "15",
+      "otherEmergencyNumbers": {
+        "general": "112",
+        "police": "17",
+        "fire": "18",
+        "sms": "114"
+      },
+      "currency": "EUR",
+      "status": "active"
+    }
+  ],
   "resources": [
     {
       "id": "fr_3114",
@@ -12,15 +32,29 @@
         "fr": "Numéro national de prévention du suicide. Gratuit, confidentiel, 24h/24."
       },
       "phone": "3114",
-      "website": "https://3114.fr",
+      "website": "https://3114.fr/",
       "socialLinks": {
         "facebook": "https://www.facebook.com/Le3114",
         "instagram": "https://www.instagram.com/3114_appel"
       },
       "countryCode": "FR",
       "targetAddictions": [],
+      "categories": [
+        "crisis_suicide"
+      ],
       "isEmergency": true,
-      "schedule": "24h/24, 7j/7"
+      "priority": 100,
+      "hours": {
+        "en": "24/7",
+        "fr": "24 h/24, 7 j/7"
+      },
+      "is24h": true,
+      "free": true,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://3114.fr/"
     },
     {
       "id": "fr_sos_amitie",
@@ -33,6 +67,7 @@
         "fr": "Écoute et soutien pour les personnes en détresse."
       },
       "phone": "09 72 39 40 50",
+      "chatUrl": "https://www.sosamitie.org/besoin-aide/chat",
       "website": "https://www.sosamitie.org/",
       "donateUrl": "https://www.sosamitie.org/aider/don-legs-donation",
       "socialLinks": {
@@ -42,8 +77,22 @@
       },
       "countryCode": "FR",
       "targetAddictions": [],
+      "categories": [
+        "emotional_support"
+      ],
       "isEmergency": true,
-      "schedule": "24h/24, 7j/7"
+      "priority": 90,
+      "hours": {
+        "en": "24/7",
+        "fr": "24 h/24, 7 j/7"
+      },
+      "is24h": true,
+      "free": false,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.sosamitie.org/besoin-aide/chat"
     },
     {
       "id": "fr_fil_sante",
@@ -56,7 +105,8 @@
         "fr": "Information santé pour les jeunes (12-25 ans)."
       },
       "phone": "0 800 235 236",
-      "website": "https://www.filsantejeunes.com",
+      "chatUrl": "https://www.filsantejeunes.com/tchat-individuel",
+      "website": "https://www.filsantejeunes.com/",
       "socialLinks": {
         "facebook": "https://www.facebook.com/filsantejeunes",
         "twitter": "https://twitter.com/Filsantejeunes",
@@ -64,8 +114,21 @@
       },
       "countryCode": "FR",
       "targetAddictions": [],
+      "categories": [
+        "youth"
+      ],
       "isEmergency": false,
-      "schedule": "9h-23h, 7j/7"
+      "priority": 50,
+      "hours": {
+        "en": "9 am-11 pm, 7 days a week",
+        "fr": "9 h-23 h, 7 j/7"
+      },
+      "free": true,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.filsantejeunes.com/contact"
     },
     {
       "id": "fr_drogues_info",
@@ -78,14 +141,27 @@
         "fr": "Information et aide sur les drogues. Gratuit et anonyme."
       },
       "phone": "0 800 23 13 13",
-      "website": "https://www.drogues-info-service.fr",
-      "socialLinks": {},
+      "chatUrl": "https://www.drogues-info-service.fr/Drogues/Chat",
+      "website": "https://www.drogues-info-service.fr/",
       "countryCode": "FR",
       "targetAddictions": [
         "drugs"
       ],
+      "categories": [
+        "drugs"
+      ],
       "isEmergency": false,
-      "schedule": "8h-23h, 7j/7"
+      "priority": 60,
+      "hours": {
+        "en": "8 am-11 pm, 7 days a week",
+        "fr": "8 h-23 h, 7 j/7"
+      },
+      "free": true,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.drogues-info-service.fr/Drogues/par-telephone"
     },
     {
       "id": "fr_alcool_info",
@@ -98,14 +174,27 @@
         "fr": "Écoute et information sur l'alcool."
       },
       "phone": "0 980 980 930",
-      "website": "https://www.alcool-info-service.fr",
-      "socialLinks": {},
+      "chatUrl": "https://www.alcool-info-service.fr/chat",
+      "website": "https://www.alcool-info-service.fr/",
       "countryCode": "FR",
       "targetAddictions": [
         "alcohol"
       ],
+      "categories": [
+        "alcohol"
+      ],
       "isEmergency": false,
-      "schedule": "8h-23h, 7j/7"
+      "priority": 60,
+      "hours": {
+        "en": "8 am-11 pm, 7 days a week",
+        "fr": "8 h-23 h, 7 j/7"
+      },
+      "free": false,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.alcool-info-service.fr/alcool-info-service-change-ses-horaires"
     },
     {
       "id": "fr_tabac_info",
@@ -118,14 +207,26 @@
         "fr": "Accompagnement et aide pour arrêter de fumer."
       },
       "phone": "39 89",
-      "website": "https://www.tabac-info-service.fr",
-      "socialLinks": {},
+      "website": "https://www.tabac-info-service.fr/",
       "countryCode": "FR",
       "targetAddictions": [
         "tobacco"
       ],
+      "categories": [
+        "tobacco"
+      ],
       "isEmergency": false,
-      "schedule": "8h-20h, lun-sam"
+      "priority": 60,
+      "hours": {
+        "en": "8 am-8 pm, Monday to Saturday",
+        "fr": "8 h-20 h, du lundi au samedi"
+      },
+      "free": false,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.tabac-info-service.fr/je-me-fais-accompagner/le-39-89"
     },
     {
       "id": "fr_joueurs_info",
@@ -138,14 +239,27 @@
         "fr": "Aide pour le jeu problématique."
       },
       "phone": "09 74 75 13 13",
-      "website": "https://www.joueurs-info-service.fr",
-      "socialLinks": {},
+      "chatUrl": "https://www.joueurs-info-service.fr/Joueurs/Pages-satellites/Chat",
+      "website": "https://www.joueurs-info-service.fr/",
       "countryCode": "FR",
       "targetAddictions": [
         "gambling"
       ],
+      "categories": [
+        "gambling"
+      ],
       "isEmergency": false,
-      "schedule": "8h-23h, 7j/7"
+      "priority": 60,
+      "hours": {
+        "en": "8 am-11 pm, 7 days a week",
+        "fr": "8 h-23 h, 7 j/7"
+      },
+      "free": false,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.joueurs-info-service.fr/Actualites/Joueurs-info-service-change-ses-horaires"
     },
     {
       "id": "fr_anorexie",
@@ -159,13 +273,25 @@
       },
       "phone": "09 69 325 900",
       "website": "https://www.ffab.fr/",
-      "socialLinks": {},
       "countryCode": "FR",
       "targetAddictions": [
         "food"
       ],
+      "categories": [
+        "eating_disorders"
+      ],
       "isEmergency": false,
-      "schedule": "16h-18h, lun-mar-jeu-ven"
+      "priority": 40,
+      "hours": {
+        "en": "4-6 pm, Monday, Tuesday, Thursday and Friday (except public holidays)",
+        "fr": "16 h-18 h, lundi, mardi, jeudi et vendredi (hors jours fériés)"
+      },
+      "free": false,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.reseautca-idf.org/ressources/ligne-anorexie-boulimie-info-ecoute"
     },
     {
       "id": "fr_net_ecoute",
@@ -178,7 +304,8 @@
         "fr": "Aide contre les violences numériques et les cyber-addictions."
       },
       "phone": "3018",
-      "website": "https://www.e-enfance.org",
+      "chatUrl": "https://e-enfance.org/app-3018/",
+      "website": "https://e-enfance.org/",
       "socialLinks": {
         "instagram": "https://www.instagram.com/e_enfance"
       },
@@ -187,8 +314,21 @@
         "socialMedia",
         "gaming"
       ],
+      "categories": [
+        "youth"
+      ],
       "isEmergency": false,
-      "schedule": "9h-23h, 7j/7"
+      "priority": 40,
+      "hours": {
+        "en": "9 am-11 pm, 7 days a week",
+        "fr": "9 h-23 h, 7 j/7"
+      },
+      "free": true,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://e-enfance.org/besoin-daide/"
     },
     {
       "id": "fr_ecoute_cannabis",
@@ -201,14 +341,26 @@
         "fr": "Écoute et soutien pour les consommateurs de cannabis et leur entourage. Anonyme, appel non surtaxé."
       },
       "phone": "0 980 980 940",
-      "website": "https://www.drogues-info-service.fr",
-      "socialLinks": {},
+      "website": "https://www.drogues-info-service.fr/",
       "countryCode": "FR",
       "targetAddictions": [
         "drugs"
       ],
+      "categories": [
+        "drugs"
+      ],
       "isEmergency": false,
-      "schedule": "8h-23h, 7j/7"
+      "priority": 40,
+      "hours": {
+        "en": "8 am-11 pm, 7 days a week",
+        "fr": "8 h-23 h, 7 j/7"
+      },
+      "free": false,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.tabac-info-service.fr/infos/autres-lignes-telephoniques"
     },
     {
       "id": "fr_alcooliques_anonymes",
@@ -221,14 +373,27 @@
         "fr": "Fraternité d'entraide pour les personnes ayant un problème d'alcool. Réunions anonymes et permanence téléphonique 24h/24."
       },
       "phone": "09 69 39 40 20",
-      "website": "https://alcooliques-anonymes.fr",
-      "socialLinks": {},
+      "website": "https://alcooliques-anonymes.fr/",
       "countryCode": "FR",
       "targetAddictions": [
         "alcohol"
       ],
+      "categories": [
+        "mutual_aid"
+      ],
       "isEmergency": false,
-      "schedule": "24h/24, 7j/7"
+      "priority": 30,
+      "hours": {
+        "en": "24/7",
+        "fr": "24 h/24, 7 j/7"
+      },
+      "is24h": true,
+      "free": false,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://alcooliques-anonymes.fr/prendre-contact-pour-votre-probleme-dalcool/"
     },
     {
       "id": "fr_narcotiques_anonymes",
@@ -241,7 +406,7 @@
         "fr": "Fraternité d'entraide pour les personnes se rétablissant d'une addiction aux drogues. Réunions et ligne d'écoute."
       },
       "phone": "01 43 72 12 72",
-      "website": "https://www.narcotiquesanonymes.org",
+      "website": "https://www.narcotiquesanonymes.org/",
       "socialLinks": {
         "facebook": "https://www.facebook.com/NarcotiquesAnonymesFrance",
         "instagram": "https://www.instagram.com/narcotiquesanonymes.france"
@@ -250,8 +415,21 @@
       "targetAddictions": [
         "drugs"
       ],
+      "categories": [
+        "mutual_aid"
+      ],
       "isEmergency": false,
-      "schedule": "9h-22h, 7j/7"
+      "priority": 30,
+      "hours": {
+        "en": "9 am-10 pm, 7 days a week",
+        "fr": "9 h-22 h, 7 j/7"
+      },
+      "free": false,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.narcotiquesanonymes.org/contact/"
     },
     {
       "id": "fr_croix_bleue",
@@ -264,14 +442,26 @@
         "fr": "Association d'entraide pour les personnes en difficulté avec l'alcool et autres addictions. Groupes de parole."
       },
       "phone": "01 42 28 37 37",
-      "website": "https://www.croixbleue.fr",
-      "socialLinks": {},
+      "website": "https://www.croixbleue.fr/",
       "countryCode": "FR",
       "targetAddictions": [
         "alcohol"
       ],
+      "categories": [
+        "mutual_aid"
+      ],
       "isEmergency": false,
-      "schedule": "9h-16h30, mar-jeu"
+      "priority": 30,
+      "hours": {
+        "en": "9 am-4:30 pm, Tuesday to Thursday",
+        "fr": "9 h-16 h 30, du mardi au jeudi"
+      },
+      "free": false,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.croixbleue.fr/Accueil-Siege"
     },
     {
       "id": "fr_dasa",
@@ -283,13 +473,21 @@
         "en": "12-step fellowship for people recovering from sex and love addiction. Free meetings in person and online.",
         "fr": "Fraternité en 12 étapes pour les personnes se rétablissant d'une dépendance affective et/ou sexuelle. Réunions gratuites en présentiel et en ligne."
       },
-      "website": "https://dasafrance.fr",
-      "socialLinks": {},
+      "website": "https://dasafrance.fr/",
       "countryCode": "FR",
       "targetAddictions": [
         "other"
       ],
-      "isEmergency": false
+      "categories": [
+        "mutual_aid"
+      ],
+      "isEmergency": false,
+      "priority": 30,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://dasafrance.fr/"
     },
     {
       "id": "fr_chemsex_aides",
@@ -301,6 +499,7 @@
         "en": "Listening and emergency support for chemsex users and their relatives. Contact by WhatsApp message (no calls).",
         "fr": "Écoute et soutien d'urgence pour les pratiquants du chemsex et leur entourage. Contact par message WhatsApp (pas d'appels)."
       },
+      "chatUrl": "https://wa.me/33762932229",
       "website": "https://www.aides.org/chemsex",
       "socialLinks": {
         "facebook": "https://www.facebook.com/assoAIDES",
@@ -312,7 +511,16 @@
         "chemsex",
         "drugs"
       ],
-      "isEmergency": false
+      "categories": [
+        "harm_reduction"
+      ],
+      "isEmergency": false,
+      "priority": 40,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://www.aides.org/chemsex"
     },
     {
       "id": "fr_addictions_france",
@@ -325,7 +533,7 @@
         "fr": "Association nationale de prévention, de soins et de réduction des risques pour toutes les addictions (avec ou sans substance). Gère 113 centres CSAPA en France."
       },
       "phone": "01 42 33 51 04",
-      "website": "https://addictions-france.org",
+      "website": "https://addictions-france.org/",
       "socialLinks": {
         "facebook": "https://www.facebook.com/AddictionsFr",
         "twitter": "https://twitter.com/addictionsfr",
@@ -334,8 +542,21 @@
       },
       "countryCode": "FR",
       "targetAddictions": [],
+      "categories": [
+        "general_addiction"
+      ],
       "isEmergency": false,
-      "schedule": "9h-17h, lun-ven"
+      "priority": 50,
+      "hours": {
+        "en": "9 am-5 pm, Monday to Friday",
+        "fr": "9 h-17 h, du lundi au vendredi"
+      },
+      "free": false,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://addictions-france.org/contact/"
     },
     {
       "id": "fr_cefraap",
@@ -347,7 +568,7 @@
         "en": "Support groups, individual counseling and training for pornography addiction.",
         "fr": "Groupes de parole, accompagnement individuel et formations sur l'addiction à la pornographie."
       },
-      "website": "https://cefraap.com",
+      "website": "https://cefraap.com/",
       "socialLinks": {
         "instagram": "https://www.instagram.com/cefraap"
       },
@@ -355,7 +576,16 @@
       "targetAddictions": [
         "pornography"
       ],
-      "isEmergency": false
+      "categories": [
+        "sex_porn"
+      ],
+      "isEmergency": false,
+      "priority": 30,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://cefraap.com/contact/"
     },
     {
       "id": "fr_chems_pause",
@@ -367,7 +597,7 @@
         "en": "Prevention and harm reduction association for chemsex. Weekly support groups, wellness workshops and social activities in Paris. Open to all genders and orientations.",
         "fr": "Association de prévention et réduction des risques liés au chemsex. Groupes de parole hebdomadaires, ateliers bien-être et activités sociales à Paris. Ouvert à tous les genres et orientations."
       },
-      "website": "https://chemspause.fr",
+      "website": "https://chemspause.fr/association/",
       "donateUrl": "https://www.helloasso.com/associations/chems-pause",
       "socialLinks": {
         "twitter": "https://twitter.com/chemspause",
@@ -378,7 +608,16 @@
         "chemsex",
         "drugs"
       ],
-      "isEmergency": false
+      "categories": [
+        "harm_reduction"
+      ],
+      "isEmergency": false,
+      "priority": 40,
+      "languages": [
+        "fr"
+      ],
+      "verifiedAt": "2026-10-02",
+      "source": "https://chemspause.fr/association/"
     }
   ]
 }
