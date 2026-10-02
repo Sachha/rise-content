@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "schemaVersion": 2,
   "fallbackDirectoryUrl": "https://findahelpline.com",
   "countries": [
@@ -18,6 +18,464 @@
       },
       "currency": "EUR",
       "status": "active"
+    },
+    {
+      "code": "BE",
+      "name": {
+        "en": "Belgium",
+        "fr": "Belgique"
+      },
+      "emergencyNumber": "112",
+      "otherEmergencyNumbers": {
+        "police": "101"
+      },
+      "currency": "EUR",
+      "status": "beta",
+      "regionLabel": {
+        "en": "Region",
+        "fr": "Région"
+      },
+      "regions": [
+        {
+          "code": "BE-BRU",
+          "name": {
+            "en": "Brussels-Capital Region",
+            "fr": "Région de Bruxelles-Capitale"
+          }
+        },
+        {
+          "code": "BE-VLG",
+          "name": {
+            "en": "Flanders",
+            "fr": "Flandre"
+          }
+        },
+        {
+          "code": "BE-WAL",
+          "name": {
+            "en": "Wallonia",
+            "fr": "Wallonie"
+          }
+        }
+      ]
+    },
+    {
+      "code": "CH",
+      "name": {
+        "en": "Switzerland",
+        "fr": "Suisse"
+      },
+      "emergencyNumber": "144",
+      "otherEmergencyNumbers": {
+        "general": "112",
+        "police": "117",
+        "fire": "118"
+      },
+      "currency": "CHF",
+      "status": "beta",
+      "regionLabel": {
+        "en": "Canton",
+        "fr": "Canton"
+      },
+      "regions": [
+        {
+          "code": "CH-AG",
+          "name": {
+            "en": "Aargau",
+            "fr": "Argovie"
+          }
+        },
+        {
+          "code": "CH-AI",
+          "name": {
+            "en": "Appenzell Innerrhoden",
+            "fr": "Appenzell Rhodes-Intérieures"
+          }
+        },
+        {
+          "code": "CH-AR",
+          "name": {
+            "en": "Appenzell Ausserrhoden",
+            "fr": "Appenzell Rhodes-Extérieures"
+          }
+        },
+        {
+          "code": "CH-BE",
+          "name": {
+            "en": "Bern",
+            "fr": "Berne"
+          }
+        },
+        {
+          "code": "CH-BL",
+          "name": {
+            "en": "Basel-Landschaft",
+            "fr": "Bâle-Campagne"
+          }
+        },
+        {
+          "code": "CH-BS",
+          "name": {
+            "en": "Basel-Stadt",
+            "fr": "Bâle-Ville"
+          }
+        },
+        {
+          "code": "CH-FR",
+          "name": {
+            "en": "Fribourg",
+            "fr": "Fribourg"
+          }
+        },
+        {
+          "code": "CH-GE",
+          "name": {
+            "en": "Geneva",
+            "fr": "Genève"
+          }
+        },
+        {
+          "code": "CH-GL",
+          "name": {
+            "en": "Glarus",
+            "fr": "Glaris"
+          }
+        },
+        {
+          "code": "CH-GR",
+          "name": {
+            "en": "Graubünden",
+            "fr": "Grisons"
+          }
+        },
+        {
+          "code": "CH-JU",
+          "name": {
+            "en": "Jura",
+            "fr": "Jura"
+          }
+        },
+        {
+          "code": "CH-LU",
+          "name": {
+            "en": "Lucerne",
+            "fr": "Lucerne"
+          }
+        },
+        {
+          "code": "CH-NE",
+          "name": {
+            "en": "Neuchâtel",
+            "fr": "Neuchâtel"
+          }
+        },
+        {
+          "code": "CH-NW",
+          "name": {
+            "en": "Nidwalden",
+            "fr": "Nidwald"
+          }
+        },
+        {
+          "code": "CH-OW",
+          "name": {
+            "en": "Obwalden",
+            "fr": "Obwald"
+          }
+        },
+        {
+          "code": "CH-SG",
+          "name": {
+            "en": "St. Gallen",
+            "fr": "Saint-Gall"
+          }
+        },
+        {
+          "code": "CH-SH",
+          "name": {
+            "en": "Schaffhausen",
+            "fr": "Schaffhouse"
+          }
+        },
+        {
+          "code": "CH-SO",
+          "name": {
+            "en": "Solothurn",
+            "fr": "Soleure"
+          }
+        },
+        {
+          "code": "CH-SZ",
+          "name": {
+            "en": "Schwyz",
+            "fr": "Schwytz"
+          }
+        },
+        {
+          "code": "CH-TG",
+          "name": {
+            "en": "Thurgau",
+            "fr": "Thurgovie"
+          }
+        },
+        {
+          "code": "CH-TI",
+          "name": {
+            "en": "Ticino",
+            "fr": "Tessin"
+          }
+        },
+        {
+          "code": "CH-UR",
+          "name": {
+            "en": "Uri",
+            "fr": "Uri"
+          }
+        },
+        {
+          "code": "CH-VD",
+          "name": {
+            "en": "Vaud",
+            "fr": "Vaud"
+          }
+        },
+        {
+          "code": "CH-VS",
+          "name": {
+            "en": "Valais",
+            "fr": "Valais"
+          }
+        },
+        {
+          "code": "CH-ZG",
+          "name": {
+            "en": "Zug",
+            "fr": "Zoug"
+          }
+        },
+        {
+          "code": "CH-ZH",
+          "name": {
+            "en": "Zurich",
+            "fr": "Zurich"
+          }
+        }
+      ]
+    },
+    {
+      "code": "LU",
+      "name": {
+        "en": "Luxembourg",
+        "fr": "Luxembourg"
+      },
+      "emergencyNumber": "112",
+      "otherEmergencyNumbers": {
+        "police": "113"
+      },
+      "currency": "EUR",
+      "status": "beta"
+    },
+    {
+      "code": "MC",
+      "name": {
+        "en": "Monaco",
+        "fr": "Monaco"
+      },
+      "emergencyNumber": "112",
+      "otherEmergencyNumbers": {
+        "police": "17",
+        "fire": "18"
+      },
+      "currency": "EUR",
+      "status": "beta"
+    },
+    {
+      "code": "GB",
+      "name": {
+        "en": "United Kingdom",
+        "fr": "Royaume-Uni"
+      },
+      "emergencyNumber": "999",
+      "otherEmergencyNumbers": {
+        "general": "112"
+      },
+      "currency": "GBP",
+      "status": "beta",
+      "regionLabel": {
+        "en": "Nation",
+        "fr": "Nation"
+      },
+      "regions": [
+        {
+          "code": "GB-ENG",
+          "name": {
+            "en": "England",
+            "fr": "Angleterre"
+          }
+        },
+        {
+          "code": "GB-NIR",
+          "name": {
+            "en": "Northern Ireland",
+            "fr": "Irlande du Nord"
+          }
+        },
+        {
+          "code": "GB-SCT",
+          "name": {
+            "en": "Scotland",
+            "fr": "Écosse"
+          }
+        },
+        {
+          "code": "GB-WLS",
+          "name": {
+            "en": "Wales",
+            "fr": "Pays de Galles"
+          }
+        }
+      ]
+    },
+    {
+      "code": "IE",
+      "name": {
+        "en": "Ireland",
+        "fr": "Irlande"
+      },
+      "emergencyNumber": "112",
+      "otherEmergencyNumbers": {
+        "general": "999"
+      },
+      "currency": "EUR",
+      "status": "beta"
+    },
+    {
+      "code": "MT",
+      "name": {
+        "en": "Malta",
+        "fr": "Malte"
+      },
+      "emergencyNumber": "112",
+      "currency": "EUR",
+      "status": "beta"
+    },
+    {
+      "code": "US",
+      "name": {
+        "en": "United States",
+        "fr": "États-Unis"
+      },
+      "emergencyNumber": "911",
+      "currency": "USD",
+      "status": "beta"
+    },
+    {
+      "code": "CA",
+      "name": {
+        "en": "Canada",
+        "fr": "Canada"
+      },
+      "emergencyNumber": "911",
+      "currency": "CAD",
+      "status": "beta",
+      "regionLabel": {
+        "en": "Province or territory",
+        "fr": "Province ou territoire"
+      },
+      "regions": [
+        {
+          "code": "CA-AB",
+          "name": {
+            "en": "Alberta",
+            "fr": "Alberta"
+          }
+        },
+        {
+          "code": "CA-BC",
+          "name": {
+            "en": "British Columbia",
+            "fr": "Colombie-Britannique"
+          }
+        },
+        {
+          "code": "CA-MB",
+          "name": {
+            "en": "Manitoba",
+            "fr": "Manitoba"
+          }
+        },
+        {
+          "code": "CA-NB",
+          "name": {
+            "en": "New Brunswick",
+            "fr": "Nouveau-Brunswick"
+          }
+        },
+        {
+          "code": "CA-NL",
+          "name": {
+            "en": "Newfoundland and Labrador",
+            "fr": "Terre-Neuve-et-Labrador"
+          }
+        },
+        {
+          "code": "CA-NS",
+          "name": {
+            "en": "Nova Scotia",
+            "fr": "Nouvelle-Écosse"
+          }
+        },
+        {
+          "code": "CA-NT",
+          "name": {
+            "en": "Northwest Territories",
+            "fr": "Territoires du Nord-Ouest"
+          }
+        },
+        {
+          "code": "CA-NU",
+          "name": {
+            "en": "Nunavut",
+            "fr": "Nunavut"
+          },
+          "emergencyNumber": "1-867-979-1111"
+        },
+        {
+          "code": "CA-ON",
+          "name": {
+            "en": "Ontario",
+            "fr": "Ontario"
+          }
+        },
+        {
+          "code": "CA-PE",
+          "name": {
+            "en": "Prince Edward Island",
+            "fr": "Île-du-Prince-Édouard"
+          }
+        },
+        {
+          "code": "CA-QC",
+          "name": {
+            "en": "Quebec",
+            "fr": "Québec"
+          }
+        },
+        {
+          "code": "CA-SK",
+          "name": {
+            "en": "Saskatchewan",
+            "fr": "Saskatchewan"
+          }
+        },
+        {
+          "code": "CA-YT",
+          "name": {
+            "en": "Yukon",
+            "fr": "Yukon"
+          }
+        }
+      ]
     }
   ],
   "resources": [
